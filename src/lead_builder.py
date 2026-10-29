@@ -11,6 +11,24 @@ from lead_scoring import score_lead
 
 COUNTY = "Summit"
 
+_ACRONYMS = {"Llc": "LLC", "Lp": "LP", "Llp": "LLP", "Pnc": "PNC", "Usaa": "USAA", "Hsbc": "HSBC", "Fha": "FHA",
+             "Hud": "HUD", "Mers": "MERS", "Bmo": "BMO", "Td": "TD", "Us": "US", "Na": "N.A."}
+_AKA_RE = re.compile(r"\s+(?:A/K/A|AKA|F/K/A|FKA|N/K/A|NKA)\s+", re.I)
+
+
+def clean_company(name: str) -> str:
+    """Plaintiffs are companies/trustees, never 'LAST, FIRST' - title-case them without reordering."""
+    n = parsers.clean(name)
+    if n.isupper():
+        n = n.title()
+    n = re.sub(r"\b[A-Za-z]{2,5}\b", lambda m: _ACRONYMS.get(m.group(0), m.group(0)), n)
+    return re.sub(r"\b(a/k/a|s/b/m|f/k/a|n/k/a)\b", lambda m: m.group(1).lower(), n, flags=re.I)
+
+
+def strip_alias(defendant: str) -> str:
+    """'MATTHEW KRISTOFF A/K/A MATTHEW PAUL KRISTOFF' -> 'MATTHEW KRISTOFF' (the alias is the same person)."""
+    return _AKA_RE.split(parsers.clean(defendant))[0]
+
 
 def _mdY(iso: str) -> str:
     m = re.match(r"(\d{4})-(\d{2})-(\d{2})", iso or "")
@@ -37,11 +55,12 @@ def build_lead(row: dict, parcels: Optional[ParcelIndex] = None, categories=None
     if not any(c in row["category"].lower() for c in cats):
         return None
     plaintiff, defendants = summit_feed.split_case_name(row["case_name"])
+    defendants = [strip_alias(d) for d in defendants]
     owners = parsers.dedupe_names([d for d in defendants if not parsers.is_non_owner(d)])
     key = summit_feed.lead_key(row["case_name"], row["date_added_raw"])
     lead = LeadRecord(
         county=COUNTY, case_number="SUM-" + key[:8].upper(), doc_number="",
-        owner_name=" & ".join(owners[:3]), plaintiff=parsers.pretty_name(plaintiff),
+        owner_name=" & ".join(owners[:3]), plaintiff=clean_company(plaintiff),
         defendant=", ".join(parsers.pretty_name(d) for d in defendants),
         lead_type="Foreclosure", filing_date=_mdY(row["date_added"]),
         source_url=config.FEED_URL, case_name=row["case_name"], review_status=row["review_status"],

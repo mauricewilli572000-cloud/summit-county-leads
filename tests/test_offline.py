@@ -57,3 +57,14 @@ def test_address_added_later_from_parcel_file(tmp_path, monkeypatch):
     leads = rp.merge([], ParcelIndex(str(p)))
     hit = [l for l in leads if l.property_address]
     assert len(hit) == 1 and hit[0].property_address == "10 MAPLE AVE" and "Address from name match" in hit[0].flags
+
+
+def test_real_world_name_cleanup():
+    rows = feed.parse_rows(f"""<table><tr><th>Action</th><th>Case Name</th><th>Date Added</th><th>Case Category</th><th>Status</th></tr>
+<tr><td>x</td><td>ROCKET MORTGAGE, LLC S/B/M NATIONSTAR MO -VS- MATTHEW KRISTOFF A/K/A MATTHEW PAUL KRISTOFF</td><td>{D} 9:14 AM</td><td>Foreclosure</td><td>Pending Review</td></tr>
+<tr><td>x</td><td>VELVET A. GRABLE, TRUSTEE OF THE VELVET A. GRABLE FAMILY TRUST -VS- RYAN STERRITT</td><td>{D} 9:15 AM</td><td>Foreclosure</td><td>Pending Review</td></tr>
+<tr><td>x</td><td>PNC BANK NATIONAL ASSOCIATION -VS- DELORES E HOLLAND</td><td>{D} 9:16 AM</td><td>Foreclosure</td><td>Filing Complete</td></tr></table>""")
+    a, b, c = [lead_builder.build_lead(r) for r in rows]
+    assert a.owner_name == "Matthew Kristoff" and a.plaintiff == "Rocket Mortgage, LLC s/b/m Nationstar Mo"
+    assert b.owner_name == "Ryan Sterritt" and b.plaintiff.startswith("Velvet A. Grable, Trustee")
+    assert c.plaintiff == "PNC Bank National Association"
