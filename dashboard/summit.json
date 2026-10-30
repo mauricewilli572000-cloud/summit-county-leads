@@ -1,10 +1,10 @@
 {
   "county": "Summit",
-  "generated_at": "2026-10-30T21:40:05.631063Z",
-  "total_leads": 13,
-  "leads_with_property_address": 9,
-  "leads_with_mailing_address": 1,
-  "average_lead_score": 79.7,
+  "generated_at": "2026-10-30T21:43:23.964117Z",
+  "total_leads": 14,
+  "leads_with_property_address": 10,
+  "leads_with_mailing_address": 2,
+  "average_lead_score": 80.1,
   "leads": [
     {
       "county": "Summit",
@@ -31,7 +31,35 @@
       "added_date": "2026-10-30",
       "flags": [
         "Pending clerk review",
-        "Address from complaint",
+        "No individual owner named"
+      ]
+    },
+    {
+      "county": "Summit",
+      "case_number": "SUM-98D2D895",
+      "doc_number": "",
+      "owner_name": "Leon Lowden",
+      "plaintiff": "Summit County Fiscal Officer",
+      "defendant": "Leon Lowden",
+      "property_address": "2096 6Th Stsw",
+      "property_city": "Akron",
+      "property_state": "OH",
+      "property_zip": "44314",
+      "parcel_number": "",
+      "mailing_address": "3443 Tabs Dr., Uniontown, OH 44685",
+      "lead_type": "Tax Foreclosure",
+      "filing_date": "10/30/2026",
+      "amount_owed": 15662.12,
+      "interest_rate": null,
+      "loan_type": "Tax lien",
+      "lead_score": 95,
+      "source_url": "https://newcivilfilings.summitoh.net/",
+      "case_name": "KRISTEN M SCALISE -VS- LEON LOWDEN",
+      "review_status": "Pending Review",
+      "added_date": "2026-10-30",
+      "flags": [
+        "Pending clerk review",
+        "Address from title report",
         "Tax lien (county)"
       ]
     },
@@ -61,34 +89,6 @@
       "flags": [
         "Address from title report",
         "Loan modified"
-      ]
-    },
-    {
-      "county": "Summit",
-      "case_number": "SUM-9C726A0D",
-      "doc_number": "",
-      "owner_name": "Ryan Sterritt",
-      "plaintiff": "Velvet A. Grable, Trustee Of The Velvet A. Grable Family Trust Uad 10/23/2017",
-      "defendant": "Ryan Sterritt",
-      "property_address": "1382 Redstone Avenue",
-      "property_city": "Akron",
-      "property_state": "OH",
-      "property_zip": "44310",
-      "parcel_number": "6800952",
-      "mailing_address": "",
-      "lead_type": "Foreclosure",
-      "filing_date": "10/29/2026",
-      "amount_owed": 99900.0,
-      "interest_rate": null,
-      "loan_type": "Tax lien",
-      "lead_score": 87,
-      "source_url": "https://newcivilfilings.summitoh.net/",
-      "case_name": "VELVET A. GRABLE, TRUSTEE OF THE VELVET A. GRABLE FAMILY TRUST UAD 10/23/2017 -VS- RYAN STERRITT",
-      "review_status": "Filing Complete",
-      "added_date": "2026-10-29",
-      "flags": [
-        "Address from title report",
-        "Tax lien (county)"
       ]
     },
     {
@@ -170,9 +170,7 @@
       "added_date": "2026-10-30",
       "flags": [
         "Pending clerk review",
-        "No individual owner named",
-        "Address from complaint",
-        "Tax lien (county)"
+        "No individual owner named"
       ]
     },
     {
@@ -200,9 +198,7 @@
       "added_date": "2026-10-30",
       "flags": [
         "Pending clerk review",
-        "No individual owner named",
-        "Address from title report",
-        "Tax lien (county)"
+        "No individual owner named"
       ]
     },
     {
@@ -229,8 +225,7 @@
       "review_status": "Pending Review",
       "added_date": "2026-10-30",
       "flags": [
-        "Pending clerk review",
-        "Address from title report"
+        "Pending clerk review"
       ]
     },
     {
@@ -256,6 +251,33 @@
       "case_name": "LAKEVIEW LOAN SERVICING, LLC -VS- DESIREA D KERNEY",
       "review_status": "Filing Complete",
       "added_date": "2026-10-29",
+      "flags": [
+        "Address from title report"
+      ]
+    },
+    {
+      "county": "Summit",
+      "case_number": "SUM-9C726A0D",
+      "doc_number": "",
+      "owner_name": "Ryan Sterritt",
+      "plaintiff": "Velvet A. Grable, Trustee Of The Velvet A. Grable Family Trust Uad 10/23/2017",
+      "defendant": "Ryan Sterritt",
+      "property_address": "1382 Redstone Avenue",
+      "property_city": "Akron",
+      "property_state": "OH",
+      "property_zip": "44310",
+      "parcel_number": "6800952",
+      "mailing_address": "",
+      "lead_type": "Foreclosure",
+      "filing_date": "10/29/2026",
+      "amount_owed": null,
+      "interest_rate": null,
+      "loan_type": "Conventional",
+      "lead_score": 77,
+      "source_url": "https://newcivilfilings.summitoh.net/",
+      "case_name": "VELVET A. GRABLE, TRUSTEE OF THE VELVET A. GRABLE FAMILY TRUST UAD 10/23/2017 -VS- RYAN STERRITT",
+      "review_status": "Filing Complete",
+      "added_date": "2026-10-30",
       "flags": [
         "Address from title report"
       ]
