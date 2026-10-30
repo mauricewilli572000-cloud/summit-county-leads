@@ -1,6 +1,6 @@
 {
   "county": "Summit",
-  "generated_at": "2026-10-30T21:46:31.258280Z",
+  "generated_at": "2026-10-30T21:50:27.342356Z",
   "total_leads": 14,
   "leads_with_property_address": 10,
   "leads_with_mailing_address": 2,
@@ -179,7 +179,7 @@
       "plaintiff": "Summit County Fiscal Officer",
       "defendant": "Landers Real Estate Acquisitions, Llc",
       "property_address": "1071 Sawyer Ave",
-      "property_city": "Parcel #: 67-14253",
+      "property_city": "",
       "property_state": "OH",
       "property_zip": "",
       "parcel_number": "67-14253",
@@ -196,7 +196,9 @@
       "added_date": "2026-10-30",
       "flags": [
         "Pending clerk review",
-        "No individual owner named"
+        "No individual owner named",
+        "Address from title report",
+        "Tax lien (county)"
       ]
     },
     {
