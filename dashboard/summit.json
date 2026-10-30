@@ -1,6 +1,6 @@
 {
   "county": "Summit",
-  "generated_at": "2026-10-30T21:43:23.964117Z",
+  "generated_at": "2026-10-30T21:46:31.258280Z",
   "total_leads": 14,
   "leads_with_property_address": 10,
   "leads_with_mailing_address": 2,
@@ -58,9 +58,7 @@
       "review_status": "Pending Review",
       "added_date": "2026-10-30",
       "flags": [
-        "Pending clerk review",
-        "Address from title report",
-        "Tax lien (county)"
+        "Pending clerk review"
       ]
     },
     {

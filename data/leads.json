@@ -52,9 +52,7 @@
     "review_status": "Pending Review",
     "added_date": "2026-10-30",
     "flags": [
-      "Pending clerk review",
-      "Address from title report",
-      "Tax lien (county)"
+      "Pending clerk review"
     ],
     "key": "SUMMIT:SUM-98D2D895"
   },
