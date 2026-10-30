@@ -161,3 +161,11 @@ def test_mortgage_complaint_naming_fiscal_officer_is_not_tax():
     assert not out.get("tax") and out["amount_owed"] == 99900.0 and out["interest_rate"] == 4.5
     r = doc_extract.parse_report("Property Address: 1071 Sawyer Ave Parcel #: 67-14253")
     assert r["street"] == "1071 Sawyer Ave" and not r.get("city") and not r.get("zip")
+
+
+def test_caption_address_fallback():
+    import doc_extract
+    cap = doc_extract.parse_caption_address(
+        "PNC BANK 3232 NEWMARK DRIVE MIAMISBURG, OH 45342 Plaintiff -vs- DELORES E. HOLLAND PARCEL NUMBER 0212469\n"
+        "280 JENNINGS AVE :\nCUYAHOGA FALLS, OH 44221\nDefendants FIRST COUNT")
+    assert cap == {"street": "280 Jennings Ave", "city": "Cuyahoga Falls", "zip": "44221"}

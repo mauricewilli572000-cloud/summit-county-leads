@@ -163,6 +163,7 @@ def parse_complaint(text: str) -> dict:
         out["loan_type"] = "Tax lien"
         return out
     m = (re.search(r"there is due the sum of\s*\$\s*([\d,]+(?:\.\d{2})?)", flat, re.I)
+         or re.search(r"(?:there is due|due and unpaid)[^$]{0,60}\$\s*([\d,]+(?:\.\d{2})?)", flat, re.I)
          or re.search(r"(?:principal balance|unpaid principal balance|balance) of\s*\$\s*([\d,]+(?:\.\d{2})?)", flat, re.I))
     if m:
         out["amount_owed"] = _money(m.group(1))
@@ -184,6 +185,27 @@ def parse_complaint(text: str) -> dict:
     if re.search(r"loan modification", flat, re.I):
         out["modified"] = True
     return out
+
+
+STREET_SUFFIX = (r"(?:ST|STREET|AVE|AVENUE|RD|ROAD|DR|DRIVE|LN|LANE|CT|COURT|BLVD|BOULEVARD|WAY|PL|PLACE|CIR|CIRCLE|"
+                 r"PKWY|PARKWAY|TRL|TRAIL|TER|TERRACE|HWY|HIGHWAY|PIKE|LOOP|ROW|RUN|PATH|SQ|SQUARE)")
+CAPTION_ADDR = re.compile(
+    r"(?<![\d])(\d{1,6}(?:\s*-\s*\d{1,6})?\s+(?:[NSEW]\.?\s+)?[A-Za-z0-9.'\-]+(?:\s+[A-Za-z0-9.'\-]+){0,3}?\s+" + STREET_SUFFIX +
+    r"\b\.?(?:\s+(?:NW|NE|SW|SE|N|S|E|W)\b)?)[\s:;,]*([A-Za-z][A-Za-z .'\-]{1,28}?),?\s+(?:OH|Ohio)\s+(\d{5})", re.I)
+
+
+def parse_caption_address(complaint: str) -> dict:
+    """Mortgage complaints put the borrower's address in the caption, after '-vs-' (the plaintiff's address
+    comes before it and is usually out of state). Returns the first Ohio street address after the 'vs' marker."""
+    head = re.sub(r"[ \t]+", " ", complaint[:3000])
+    v = re.search(r"(?:-\s*v\.?s\.?\s*-?|\bvs?\.\s)", head, re.I)
+    seg = head[v.end():] if v else head
+    seg = re.split(r"\bFIRST COUNT\b|\bNow comes\b", seg, flags=re.I)[0]
+    m = CAPTION_ADDR.search(seg)
+    if not m:
+        return {}
+    city = re.sub(r"\s+", " ", m.group(2)).strip(" ,")
+    return {"street": _title(re.sub(r"\s+", " ", m.group(1))), "city": _title(city), "zip": m.group(3)}
 
 
 def parse_service(text: str) -> dict:
@@ -223,12 +245,19 @@ def extract(docs: Dict[str, str]) -> dict:
         street, city, zip5 = rep.get("street"), rep.get("city"), rep.get("zip")
         if street:
             out["address_source"] = "title report"
+        elif not comp.get("tax") and parse_caption_address(docs.get("complaint", "")):
+            cap = parse_caption_address(docs.get("complaint", ""))
+            street, city, zip5 = cap["street"], cap["city"], cap["zip"]
+            out["address_source"] = "complaint"
         elif svc and not comp.get("tax"):              # report missing: borrower's service address is the best guess
             street, city, zip5 = svc["street"], svc["city"], svc["zip"]
             out["address_source"] = "service address"
     if street:
         out.update(property_address=street, property_city=city or "", property_zip=zip5 or "")
     parcel = comp.get("parcel") or rep.get("parcel")
+    if not parcel:
+        pm = re.search(r"(?:PARCEL\s*(?:NUMBER|NO\.?|#)|PPN|PERMANENT PARCEL)[:\s#]*(\d[\d\-]{4,})", docs.get("complaint", "")[:3500], re.I)
+        parcel = pm.group(1) if pm else ""
     if parcel:
         out["parcel_number"] = parcel
     if comp.get("tax"):
