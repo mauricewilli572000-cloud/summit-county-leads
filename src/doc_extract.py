@@ -115,7 +115,7 @@ def _title(s: str) -> str:
 def parse_report(text: str) -> dict:
     """Preliminary Judicial Report -> property address, parcel, record owner, mortgage."""
     out = {}
-    m = (re.search(r"PROPERTY ADDRESS:\s*(\d[^\n]*?\n?[^\n]{0,60}?\b\d{5}\b)", text, re.I)
+    m = (re.search(r"PROPERTY ADDRESS:\s*(\d[^\n]*?\n?[^\n]{0,60}?\b(?:OH|OHIO)\b[,\s]*\d{5}\b)", text, re.I)
          or re.search(r"PROPERTY ADDRESS:\s*(.+?)\s*(?:\n|PARCEL)", text, re.I))
     if m:
         raw = re.split(r"\s+Parcel\b", re.sub(r"\s+", " ", m.group(1)).strip(), maxsplit=1, flags=re.I)[0]

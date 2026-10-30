@@ -159,4 +159,5 @@ def test_mortgage_complaint_naming_fiscal_officer_is_not_tax():
          "there is due the sum of $99,900.00 plus interest at the rate of 4.5% per annum")
     out = doc_extract.parse_complaint(c)
     assert not out.get("tax") and out["amount_owed"] == 99900.0 and out["interest_rate"] == 4.5
-    assert doc_extract.parse_report("Property Address: 1071 Sawyer Ave Parcel #: 67-14253")["street"] == "1071 Sawyer Ave"
+    r = doc_extract.parse_report("Property Address: 1071 Sawyer Ave Parcel #: 67-14253")
+    assert r["street"] == "1071 Sawyer Ave" and not r.get("city") and not r.get("zip")
