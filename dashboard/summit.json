@@ -1,10 +1,10 @@
 {
   "county": "Summit",
-  "generated_at": "2026-10-30T22:19:49.797218Z",
+  "generated_at": "2026-10-30T22:23:23.060706Z",
   "total_leads": 14,
-  "leads_with_property_address": 10,
+  "leads_with_property_address": 12,
   "leads_with_mailing_address": 2,
-  "average_lead_score": 80.1,
+  "average_lead_score": 83.9,
   "leads": [
     {
       "county": "Summit",
@@ -59,6 +59,61 @@
       "added_date": "2026-10-30",
       "flags": [
         "Pending clerk review"
+      ]
+    },
+    {
+      "county": "Summit",
+      "case_number": "SUM-808C6830",
+      "doc_number": "",
+      "owner_name": "Delores E Holland",
+      "plaintiff": "PNC Bank National Association",
+      "defendant": "Delores E Holland",
+      "property_address": "280 Jennings Ave",
+      "property_city": "Cuyahoga Falls",
+      "property_state": "OH",
+      "property_zip": "44221",
+      "parcel_number": "0212469",
+      "mailing_address": "",
+      "lead_type": "Foreclosure",
+      "filing_date": "10/29/2026",
+      "amount_owed": 27741.0,
+      "interest_rate": 8.24,
+      "loan_type": "Conventional",
+      "lead_score": 92,
+      "source_url": "https://newcivilfilings.summitoh.net/",
+      "case_name": "PNC BANK NATIONAL ASSOCIATION -VS- DELORES E HOLLAND",
+      "review_status": "Filing Complete",
+      "added_date": "2026-10-29",
+      "flags": [
+        "Address from complaint"
+      ]
+    },
+    {
+      "county": "Summit",
+      "case_number": "SUM-E6D1176D",
+      "doc_number": "",
+      "owner_name": "Aaroh Capital Llc,",
+      "plaintiff": "Computershare Trust Company, N.A., Not I",
+      "defendant": "Aaroh Capital Llc",
+      "property_address": "1208 -1210 Bellows Street",
+      "property_city": "Akron",
+      "property_state": "OH",
+      "property_zip": "44301",
+      "parcel_number": "6819783",
+      "mailing_address": "",
+      "lead_type": "Foreclosure",
+      "filing_date": "10/30/2026",
+      "amount_owed": 103728.17,
+      "interest_rate": 10.5,
+      "loan_type": "Conventional",
+      "lead_score": 92,
+      "source_url": "https://newcivilfilings.summitoh.net/",
+      "case_name": "COMPUTERSHARE TRUST COMPANY, N.A., NOT I -VS- AAROH CAPITAL LLC",
+      "review_status": "Pending Review",
+      "added_date": "2026-10-30",
+      "flags": [
+        "Pending clerk review",
+        "Address from complaint"
       ]
     },
     {
@@ -282,33 +337,6 @@
     },
     {
       "county": "Summit",
-      "case_number": "SUM-808C6830",
-      "doc_number": "",
-      "owner_name": "Delores E Holland",
-      "plaintiff": "PNC Bank National Association",
-      "defendant": "Delores E Holland",
-      "property_address": "",
-      "property_city": "",
-      "property_state": "OH",
-      "property_zip": "",
-      "parcel_number": "",
-      "mailing_address": "",
-      "lead_type": "Foreclosure",
-      "filing_date": "10/29/2026",
-      "amount_owed": null,
-      "interest_rate": null,
-      "loan_type": "",
-      "lead_score": 65,
-      "source_url": "https://newcivilfilings.summitoh.net/",
-      "case_name": "PNC BANK NATIONAL ASSOCIATION -VS- DELORES E HOLLAND",
-      "review_status": "Filing Complete",
-      "added_date": "2026-10-29",
-      "flags": [
-        "Pending clerk review"
-      ]
-    },
-    {
-      "county": "Summit",
       "case_number": "SUM-2BA61CD4",
       "doc_number": "",
       "owner_name": "Natasha D. Washington",
@@ -353,34 +381,6 @@
       "lead_score": 65,
       "source_url": "https://newcivilfilings.summitoh.net/",
       "case_name": "KRISTEN M SCALISE -VS- UNKNOWN HEIRS OF MICHELINE MCDANIEL",
-      "review_status": "Pending Review",
-      "added_date": "2026-10-30",
-      "flags": [
-        "Pending clerk review",
-        "No individual owner named"
-      ]
-    },
-    {
-      "county": "Summit",
-      "case_number": "SUM-E6D1176D",
-      "doc_number": "",
-      "owner_name": "",
-      "plaintiff": "Computershare Trust Company, N.A., Not I",
-      "defendant": "Aaroh Capital Llc",
-      "property_address": "",
-      "property_city": "",
-      "property_state": "OH",
-      "property_zip": "",
-      "parcel_number": "",
-      "mailing_address": "",
-      "lead_type": "Foreclosure",
-      "filing_date": "10/30/2026",
-      "amount_owed": null,
-      "interest_rate": null,
-      "loan_type": "",
-      "lead_score": 65,
-      "source_url": "https://newcivilfilings.summitoh.net/",
-      "case_name": "COMPUTERSHARE TRUST COMPANY, N.A., NOT I -VS- AAROH CAPITAL LLC",
       "review_status": "Pending Review",
       "added_date": "2026-10-30",
       "flags": [
