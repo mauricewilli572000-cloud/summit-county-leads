@@ -55,6 +55,7 @@ jobs:
           git config user.name "summit-lead-bot"
           git config user.email "actions@users.noreply.github.com"
           git add data/leads.json dashboard/summit.json dashboard/summit_ghl_export.csv
+          git add data/doc_debug 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else

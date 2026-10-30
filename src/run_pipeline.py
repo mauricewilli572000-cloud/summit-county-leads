@@ -101,6 +101,25 @@ def _write_all(leads: List[LeadRecord]) -> None:
 MAX_DOC_PULLS = 15       # "Get Docs" downloads per run; only leads that still lack an address are pulled
 
 
+def _save_doc_debug(case_number: str, case_name: str, data) -> None:
+    """When no address can be read, keep a text dump (file names + start of each document) for diagnosis."""
+    import io
+    import zipfile
+    out = [f"{case_number}  {case_name}", f"download: {'none (server error / row not found)' if not data else f'{len(data)} bytes'}"]
+    if data:
+        try:
+            with zipfile.ZipFile(io.BytesIO(data)) as z:
+                out += [f"  file: {i.filename} ({i.file_size} bytes)" for i in z.infolist()]
+            for kind, txt in doc_extract.read_zip(data).items():
+                out += ["", f"--- {kind} ({len(txt)} chars) ---", txt[:2500]]
+        except Exception as e:
+            out.append(f"zip unreadable: {e}")
+    d = os.path.join(DATA_DIR, "doc_debug")
+    os.makedirs(d, exist_ok=True)
+    with open(os.path.join(d, case_number + ".txt"), "w", encoding="utf-8") as f:
+        f.write("\n".join(out))
+
+
 def run(headed: bool = False) -> List[LeadRecord]:
     parcels = ParcelIndex(PARCEL_CSV_PATH) if os.path.exists(PARCEL_CSV_PATH) else None
     print("parcel file:", "loaded" if parcels else "none (addresses stay blank)")
@@ -127,6 +146,7 @@ def run(headed: bool = False) -> List[LeadRecord]:
                     else:
                         failed += 1
                         print(f"  no address found in docs for {lead.case_number}")
+                        _save_doc_debug(lead.case_number, r["case_name"], data)
                 except Exception as e:           # one bad document must not stop the run
                     failed += 1
                     print(f"  ! docs failed for {lead.case_number}: {e}")

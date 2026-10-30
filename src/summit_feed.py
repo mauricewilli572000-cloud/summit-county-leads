@@ -95,12 +95,17 @@ class SummitFeed:
             tr = self.page.locator("tbody tr").filter(has_text=name[:35]).filter(has=btn)
         if not tr.count():
             return None
-        try:
-            with self.page.expect_download(timeout=45000) as dl:
-                tr.first.get_by_role("button", name="Get Docs").click()
-            with open(dl.value.path(), "rb") as fh:
-                data = fh.read()
-        except Exception:
+        data = None
+        for attempt in range(3):                  # the clerk's server drops connections now and then
+            try:
+                with self.page.expect_download(timeout=60000) as dl:
+                    tr.first.get_by_role("button", name="Get Docs").click()
+                with open(dl.value.path(), "rb") as fh:
+                    data = fh.read()
+                break
+            except Exception:
+                self.page.wait_for_timeout(3000)
+        if data is None:
             return None
         self.page.wait_for_timeout(1500)          # be gentle: one document pull at a time
         return data
