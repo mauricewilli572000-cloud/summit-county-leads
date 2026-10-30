@@ -151,3 +151,12 @@ def test_two_line_report_address_and_doc_kinds():
     assert doc_extract.doc_kind("1_2964_NOTICE_OF_SUMMONS_AND_COMPLAINT.pdf") == "other"
     assert doc_extract.doc_kind("1_738_TITLE_INVOICE.pdf") == "other"
     assert doc_extract.doc_kind("1_663_PRELIMINARY_JUDICIAL_REPORT.pdf") == "report"
+
+
+def test_mortgage_complaint_naming_fiscal_officer_is_not_tax():
+    import doc_extract
+    c = ("COURT OF COMMON PLEAS SUMMIT COUNTY, OHIO Plaintiff -vs- RYAN STERRITT SUMMIT COUNTY FISCAL OFFICER, defendant "
+         "there is due the sum of $99,900.00 plus interest at the rate of 4.5% per annum")
+    out = doc_extract.parse_complaint(c)
+    assert not out.get("tax") and out["amount_owed"] == 99900.0 and out["interest_rate"] == 4.5
+    assert doc_extract.parse_report("Property Address: 1071 Sawyer Ave Parcel #: 67-14253")["street"] == "1071 Sawyer Ave"

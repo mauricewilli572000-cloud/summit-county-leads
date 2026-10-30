@@ -118,7 +118,7 @@ def parse_report(text: str) -> dict:
     m = (re.search(r"PROPERTY ADDRESS:\s*(\d[^\n]*?\n?[^\n]{0,60}?\b\d{5}\b)", text, re.I)
          or re.search(r"PROPERTY ADDRESS:\s*(.+?)\s*(?:\n|PARCEL)", text, re.I))
     if m:
-        raw = re.sub(r"\s+", " ", m.group(1)).strip()
+        raw = re.split(r"\s+Parcel\b", re.sub(r"\s+", " ", m.group(1)).strip(), maxsplit=1, flags=re.I)[0]
         z = re.search(r"(?:,|\s)\s*(?:OH|OHIO)?\s*(\d{5})(?:-\d{4})?\s*$", raw, re.I)
         zip5 = z.group(1) if z else ""
         body = re.sub(r"[,\s]*(?:OH|OHIO)?\s*\d{5}(?:-\d{4})?\s*$", "", raw, flags=re.I) if z else raw
@@ -144,7 +144,9 @@ def parse_report(text: str) -> dict:
 def parse_complaint(text: str) -> dict:
     out = {}
     flat = re.sub(r"\s+", " ", text)
-    if re.search(r"BOARD OF REVISION|FISCAL OFFICER|Delinquent Tax", flat, re.I):      # land-bank / tax foreclosure
+    # Only the county's own tax foreclosures (filed in the Board of Revision). Mortgage complaints merely NAME the
+    # Fiscal Officer / Treasurer as a defendant.
+    if re.search(r"BOARD OF REVISION", flat[:500], re.I) or re.search(r"For Foreclosure of Lien\(s\) for Land Taxes", flat, re.I):      # land-bank / tax foreclosure
         out["tax"] = True
         m = re.search(r"\(\$\s*([\d,]+\.\d{2})\)", flat)
         if m:
