@@ -4,12 +4,11 @@ The page is JavaScript-rendered, so Playwright loads it and we read the rendered
 Action ("Get Docs") | Case Name (PLAINTIFF -vs- DEFENDANT) | Date Added | Case Category | Status.
 No case number is shown, so a lead is keyed on a hash of case name + date added.
 
-STATUS: parse_rows() is written from the page text only. After discover_summit.py output arrives,
-tighten selectors here and implement fetch_docs() (the "Get Docs" action).
+"Get Docs" downloads a .zip of the case PDFs (complaint, preliminary judicial report, ...); doc_extract.py reads them.
 """
 import hashlib
 import re
-from typing import List
+from typing import List, Optional
 
 from bs4 import BeautifulSoup
 
@@ -87,6 +86,21 @@ class SummitFeed:
         open(LAST_FEED, "w", encoding="utf-8").write(self.page.content())   # for debugging
         return parse_rows(self.page.content())
 
-    def fetch_docs(self, row: dict):
-        """TODO after discover_summit.py: click 'Get Docs' for this row and return the complaint PDF bytes/URL."""
-        raise NotImplementedError("document step not built yet")
+    def fetch_docs(self, row: dict) -> Optional[bytes]:
+        """Click 'Get Docs' on this row; the site answers with a .zip of the case PDFs. None if not found."""
+        name = parsers.clean(row["case_name"])
+        btn = self.page.get_by_role("button", name="Get Docs")
+        tr = self.page.locator("tbody tr").filter(has_text=name).filter(has=btn)
+        if not tr.count():
+            tr = self.page.locator("tbody tr").filter(has_text=name[:35]).filter(has=btn)
+        if not tr.count():
+            return None
+        try:
+            with self.page.expect_download(timeout=45000) as dl:
+                tr.first.get_by_role("button", name="Get Docs").click()
+            with open(dl.value.path(), "rb") as fh:
+                data = fh.read()
+        except Exception:
+            return None
+        self.page.wait_for_timeout(1500)          # be gentle: one document pull at a time
+        return data

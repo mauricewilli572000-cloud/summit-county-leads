@@ -68,3 +68,33 @@ def test_real_world_name_cleanup():
     assert a.owner_name == "Matthew Kristoff" and a.plaintiff == "Rocket Mortgage, LLC s/b/m Nationstar Mo"
     assert b.owner_name == "Ryan Sterritt" and b.plaintiff.startswith("Velvet A. Grable, Trustee")
     assert c.plaintiff == "PNC Bank National Association"
+
+
+def test_docs_zip_to_lead():
+    """Real-shaped documents: title report gives the address, complaint gives amount/rate/loan type."""
+    import io, zipfile
+    import doc_extract
+    report = ("Effective Date: 09/30/2026\nFOR INFORMATIONAL PURPOSES ONLY:\nPROPERTY ADDRESS: 1708 ROBINWOOD DRIVE UNIONTOWN, OHIO 44685\n"
+              "PARCEL NO .: 2810195\nvested in MATTHEW PAUL KRISTOFF by instrument recorded")
+    complaint = ("SECRETARY OF HOUSING AND URBAN DEVELOPMENT there is due the sum of $114,083.89 plus interest at a current rate "
+                 "of 3% per annum from May 1, 2026. Loan Modification Agreement effective January 1, 2022")
+    docs = {"report": report, "complaint": complaint, "service": ""}
+    info = doc_extract.extract(docs)
+    assert info["property_address"] == "1708 Robinwood Drive" and info["property_city"] == "Uniontown"
+    assert info["property_zip"] == "44685" and info["parcel_number"] == "2810195"
+    assert info["amount_owed"] == 114083.89 and info["interest_rate"] == 3.0 and info["loan_type"] == "FHA"
+    lead = lead_builder.build_lead(feed.parse_rows(HTML)[0])
+    before = lead.lead_score
+    lead_builder.apply_docs(lead, info)
+    from lead_scoring import score_lead
+    assert lead.property_address == "1708 Robinwood Drive" and "Address from title report" in lead.flags
+    assert score_lead(lead) > before
+
+
+def test_read_zip_ignores_bad_pdf():
+    import io, zipfile
+    import doc_extract
+    buf = io.BytesIO()
+    with zipfile.ZipFile(buf, "w") as z:
+        z.writestr("1_2_FORECLOSURE_COMPLAINT.pdf", b"not a pdf")
+    assert doc_extract.read_zip(buf.getvalue()) == {}

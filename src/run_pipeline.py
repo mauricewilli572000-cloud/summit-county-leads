@@ -15,10 +15,11 @@ import sys
 from datetime import datetime
 from typing import Dict, List
 
+import doc_extract
 import summit_feed
 from enrichment import ParcelIndex
 from ghl_export import export_to_ghl_csv
-from lead_builder import build_lead, match_address
+from lead_builder import apply_docs, build_lead, match_address
 from lead_schema import LeadRecord
 from lead_scoring import score_lead
 
@@ -97,19 +98,45 @@ def _write_all(leads: List[LeadRecord]) -> None:
         json.dump(payload, f, indent=2)
 
 
+MAX_DOC_PULLS = 15       # "Get Docs" downloads per run; only leads that still lack an address are pulled
+
+
 def run(headed: bool = False) -> List[LeadRecord]:
     parcels = ParcelIndex(PARCEL_CSV_PATH) if os.path.exists(PARCEL_CSV_PATH) else None
     print("parcel file:", "loaded" if parcels else "none (addresses stay blank)")
+    existing = _load()
+    pulled = failed = 0
+    new: List[LeadRecord] = []
     with summit_feed.SummitFeed(headless=not headed) as feed:
         rows = feed.fetch()
-    print(f"feed rows parsed: {len(rows)}")
-    if not rows:
-        print("No rows parsed - keeping existing data. (data/last_feed.html holds the page for debugging.)")
-    new = [l for l in (build_lead(r, parcels) for r in rows) if l]
+        print(f"feed rows parsed: {len(rows)}")
+        if not rows:
+            print("No rows parsed - keeping existing data. (data/last_feed.html holds the page for debugging.)")
+        for r in rows:
+            lead = build_lead(r, parcels)
+            if not lead:
+                continue
+            old = existing.get(lead.key())
+            if not (old and old.get("property_address")) and pulled < MAX_DOC_PULLS:
+                pulled += 1
+                try:
+                    data = feed.fetch_docs(r)
+                    info = doc_extract.extract(doc_extract.read_zip(data)) if data else {}
+                    if info.get("property_address"):
+                        apply_docs(lead, info)
+                    else:
+                        failed += 1
+                        print(f"  no address found in docs for {lead.case_number}")
+                except Exception as e:           # one bad document must not stop the run
+                    failed += 1
+                    print(f"  ! docs failed for {lead.case_number}: {e}")
+            new.append(lead)
+    for l in new:
+        l.lead_score = score_lead(l)
     leads = merge(new, parcels)
     _write_all(leads)
-    print(f"foreclosures this run: {len(new)}  total on file: {len(leads)}  "
-          f"with address: {sum(1 for l in leads if l.property_address)}")
+    print(f"foreclosures this run: {len(new)}  document pulls: {pulled} (no address: {failed})  "
+          f"total on file: {len(leads)}  with address: {sum(1 for l in leads if l.property_address)}")
     return leads
 
 

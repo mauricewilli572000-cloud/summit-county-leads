@@ -50,6 +50,23 @@ def match_address(lead: LeadRecord, parcels: ParcelIndex) -> None:
             lead.flags.append("Address from name match")
 
 
+def apply_docs(lead: LeadRecord, info: dict) -> None:
+    """Copy facts read from the complaint / title report onto the lead (never overwrite with blanks)."""
+    for k in ("property_address", "property_city", "property_zip", "parcel_number", "amount_owed",
+              "interest_rate", "loan_type"):
+        if info.get(k) not in (None, ""):
+            setattr(lead, k, info[k])
+    if info.get("property_address"):
+        lead.flags = [f for f in lead.flags if f != "Address from name match"]
+        src = "Address from title report" if info.get("address_source") == "title report" else "Address from service list"
+        if src not in lead.flags:
+            lead.flags.append(src)
+    if info.get("modified") and "Loan modified" not in lead.flags:
+        lead.flags.append("Loan modified")
+    if info.get("modified_principal") and lead.amount_owed is None:
+        lead.amount_owed = info["modified_principal"]
+
+
 def build_lead(row: dict, parcels: Optional[ParcelIndex] = None, categories=None) -> Optional[LeadRecord]:
     cats = [c.lower() for c in (categories or config.FEED_CATEGORIES)]
     if not any(c in row["category"].lower() for c in cats):
