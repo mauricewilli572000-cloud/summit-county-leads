@@ -1,7 +1,7 @@
 {
   "county": "Summit",
-  "generated_at": "2026-10-30T02:05:21.198505Z",
-  "total_leads": 5,
+  "generated_at": "2026-10-30T16:46:34.570064Z",
+  "total_leads": 6,
   "leads_with_property_address": 0,
   "leads_with_mailing_address": 0,
   "average_lead_score": 65.0,
@@ -27,7 +27,7 @@
       "lead_score": 65,
       "source_url": "https://newcivilfilings.summitoh.net/",
       "case_name": "ROCKET MORTGAGE, LLC S/B/M NATIONSTAR MO -VS- MATTHEW KRISTOFF A/K/A MATTHEW PAUL KRISTOFF",
-      "review_status": "Pending Review",
+      "review_status": "Filing Complete",
       "added_date": "2026-10-29",
       "flags": [
         "Pending clerk review"
@@ -54,7 +54,7 @@
       "lead_score": 65,
       "source_url": "https://newcivilfilings.summitoh.net/",
       "case_name": "PNC BANK NATIONAL ASSOCIATION -VS- DELORES E HOLLAND",
-      "review_status": "Pending Review",
+      "review_status": "Filing Complete",
       "added_date": "2026-10-29",
       "flags": [
         "Pending clerk review"
@@ -81,7 +81,7 @@
       "lead_score": 65,
       "source_url": "https://newcivilfilings.summitoh.net/",
       "case_name": "LAKEVIEW LOAN SERVICING, LLC -VS- DESIREA D KERNEY",
-      "review_status": "Pending Review",
+      "review_status": "Filing Complete",
       "added_date": "2026-10-29",
       "flags": [
         "Pending clerk review"
@@ -108,7 +108,7 @@
       "lead_score": 65,
       "source_url": "https://newcivilfilings.summitoh.net/",
       "case_name": "VELVET A. GRABLE, TRUSTEE OF THE VELVET A. GRABLE FAMILY TRUST UAD 10/23/2017 -VS- RYAN STERRITT",
-      "review_status": "Pending Review",
+      "review_status": "Filing Complete",
       "added_date": "2026-10-29",
       "flags": [
         "Pending clerk review"
@@ -138,6 +138,33 @@
       "review_status": "Filing Complete",
       "added_date": "2026-10-29",
       "flags": []
+    },
+    {
+      "county": "Summit",
+      "case_number": "SUM-732A0090",
+      "doc_number": "",
+      "owner_name": "Erin L Simonetti",
+      "plaintiff": "Carrington Mortgage Services, LLC",
+      "defendant": "Erin L Simonetti",
+      "property_address": "",
+      "property_city": "",
+      "property_state": "OH",
+      "property_zip": "",
+      "parcel_number": "",
+      "mailing_address": "",
+      "lead_type": "Foreclosure",
+      "filing_date": "10/30/2026",
+      "amount_owed": null,
+      "interest_rate": null,
+      "loan_type": "",
+      "lead_score": 65,
+      "source_url": "https://newcivilfilings.summitoh.net/",
+      "case_name": "CARRINGTON MORTGAGE SERVICES, LLC -VS- ERIN L SIMONETTI",
+      "review_status": "Pending Review",
+      "added_date": "2026-10-30",
+      "flags": [
+        "Pending clerk review"
+      ]
     }
   ]
 }
