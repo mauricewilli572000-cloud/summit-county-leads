@@ -53,14 +53,20 @@ def match_address(lead: LeadRecord, parcels: ParcelIndex) -> None:
 def apply_docs(lead: LeadRecord, info: dict) -> None:
     """Copy facts read from the complaint / title report onto the lead (never overwrite with blanks)."""
     for k in ("property_address", "property_city", "property_zip", "parcel_number", "amount_owed",
-              "interest_rate", "loan_type"):
+              "interest_rate", "loan_type", "mailing_address"):
         if info.get(k) not in (None, ""):
             setattr(lead, k, info[k])
     if info.get("property_address"):
         lead.flags = [f for f in lead.flags if f != "Address from name match"]
-        src = "Address from title report" if info.get("address_source") == "title report" else "Address from service list"
+        src = {"title report": "Address from title report", "complaint": "Address from complaint"}.get(
+            info.get("address_source"), "Address from service list")
         if src not in lead.flags:
             lead.flags.append(src)
+    if not lead.owner_name and info.get("record_owner"):
+        lead.owner_name = info["record_owner"]
+        lead.flags = [f for f in lead.flags if f != "No individual owner named"]
+    if info.get("tax") and "Tax lien (county)" not in lead.flags:
+        lead.flags.append("Tax lien (county)")
     if info.get("modified") and "Loan modified" not in lead.flags:
         lead.flags.append("Loan modified")
     if info.get("modified_principal") and lead.amount_owed is None:
@@ -77,9 +83,9 @@ def build_lead(row: dict, parcels: Optional[ParcelIndex] = None, categories=None
     key = summit_feed.lead_key(row["case_name"], row["date_added_raw"])
     lead = LeadRecord(
         county=COUNTY, case_number="SUM-" + key[:8].upper(), doc_number="",
-        owner_name=" & ".join(owners[:3]), plaintiff=clean_company(plaintiff),
+        owner_name=" & ".join(owners[:3]), plaintiff=("Summit County Fiscal Officer" if "tax" in row["category"].lower() else clean_company(plaintiff)),
         defendant=", ".join(parsers.pretty_name(d) for d in defendants),
-        lead_type="Foreclosure", filing_date=_mdY(row["date_added"]),
+        lead_type="Tax Foreclosure" if "tax" in row["category"].lower() else "Foreclosure", filing_date=_mdY(row["date_added"]),
         source_url=config.FEED_URL, case_name=row["case_name"], review_status=row["review_status"],
     )
     if "pending" in row["review_status"].lower():

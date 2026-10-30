@@ -7,7 +7,11 @@ The zip holds text-based PDFs, named like  <id>_<n>_FORECLOSURE_COMPLAINT.pdf :
 Everything is best-effort: any field we cannot find stays empty rather than guessed.
 """
 import io
+import os
 import re
+import shutil
+import subprocess
+import tempfile
 import zipfile
 from typing import Dict, List, Optional
 
@@ -22,6 +26,24 @@ SUMMIT_CITIES = ["CUYAHOGA FALLS", "MUNROE FALLS", "NORTHFIELD", "TWINSBURG", "M
                  "ROOTSTOWN", "NORTH CANTON", "NEW FRANKLIN", "SPRINGFIELD", "NORTHAMPTON", "BRECKSVILLE"]
 
 
+def ocr_pdf(data: bytes, max_pages: int = 5) -> str:
+    """Scanned PDFs (many title reports) have no text layer: rasterize the first pages and OCR them.
+    Needs the poppler `pdftoppm` and `tesseract` programs; returns "" if they are not installed."""
+    if not (shutil.which("pdftoppm") and shutil.which("tesseract")):
+        return ""
+    out = []
+    with tempfile.TemporaryDirectory() as tmp:
+        src = os.path.join(tmp, "in.pdf")
+        with open(src, "wb") as fh:
+            fh.write(data)
+        subprocess.run(["pdftoppm", "-r", "150", "-f", "1", "-l", str(max_pages), "-png", src, os.path.join(tmp, "p")],
+                       check=False, capture_output=True, timeout=120)
+        for png in sorted(f for f in os.listdir(tmp) if f.endswith(".png")):
+            r = subprocess.run(["tesseract", os.path.join(tmp, png), "-"], capture_output=True, text=True, timeout=120)
+            out.append(r.stdout)
+    return "\n".join(out)
+
+
 def pdf_text(data: bytes, max_pages: Optional[int] = None) -> str:
     import pdfplumber
     out = []
@@ -30,21 +52,35 @@ def pdf_text(data: bytes, max_pages: Optional[int] = None) -> str:
             if max_pages and i >= max_pages:
                 break
             out.append(page.extract_text(layout=False) or "")
-    return "\n".join(out)
+    text = "\n".join(out)
+    if len(text.strip()) < 150:                      # no text layer -> scanned image
+        text = ocr_pdf(data, max_pages=min(max_pages or 5, 5)) or text
+    return text
+
+
+def doc_kind(filename: str) -> str:
+    up = os.path.basename(filename).upper()
+    if "NOTICE" in up or "INVOICE" in up or "AFFIDAVIT" in up or "READINESS" in up:
+        return "other"
+    if "COMPLAINT" in up:
+        return "complaint"
+    if "JUDICIAL_REPORT" in up:
+        return "report"
+    if "INSTRUCTIONS" in up or "REQUEST_FOR_SERVICE" in up:
+        return "service"
+    return "other"
 
 
 def read_zip(data: bytes) -> Dict[str, str]:
-    """{'complaint': text, 'report': text, 'service': text, ...} keyed by document type."""
+    """{'complaint': text, 'report': text, 'service': text} - only the documents we read (others are skipped)."""
     docs: Dict[str, str] = {}
     with zipfile.ZipFile(io.BytesIO(data)) as z:
         for n in z.namelist():
-            if not n.lower().endswith(".pdf"):
+            kind = doc_kind(n) if n.lower().endswith(".pdf") else "other"
+            if kind == "other":
                 continue
-            up = n.upper()
-            kind = ("complaint" if "COMPLAINT" in up else "report" if "JUDICIAL_REPORT" in up or "TITLE" in up
-                    else "service" if "INSTRUCTIONS" in up or "SERVICE" in up else "other")
             try:
-                txt = pdf_text(z.read(n), max_pages=10 if kind == "complaint" else 12)
+                txt = pdf_text(z.read(n), max_pages=10 if kind == "complaint" else 6)
             except Exception:
                 continue
             docs[kind] = (docs.get(kind, "") + "\n" + txt).strip()
@@ -79,9 +115,10 @@ def _title(s: str) -> str:
 def parse_report(text: str) -> dict:
     """Preliminary Judicial Report -> property address, parcel, record owner, mortgage."""
     out = {}
-    m = re.search(r"PROPERTY ADDRESS:\s*(.+?)\s*(?:\n|PARCEL)", text, re.I)
+    m = (re.search(r"PROPERTY ADDRESS:\s*(\d[^\n]*?\n?[^\n]{0,60}?\b\d{5}\b)", text, re.I)
+         or re.search(r"PROPERTY ADDRESS:\s*(.+?)\s*(?:\n|PARCEL)", text, re.I))
     if m:
-        raw = m.group(1).strip()
+        raw = re.sub(r"\s+", " ", m.group(1)).strip()
         z = re.search(r"(?:,|\s)\s*(?:OH|OHIO)?\s*(\d{5})(?:-\d{4})?\s*$", raw, re.I)
         zip5 = z.group(1) if z else ""
         body = re.sub(r"[,\s]*(?:OH|OHIO)?\s*\d{5}(?:-\d{4})?\s*$", "", raw, flags=re.I) if z else raw
@@ -107,6 +144,22 @@ def parse_report(text: str) -> dict:
 def parse_complaint(text: str) -> dict:
     out = {}
     flat = re.sub(r"\s+", " ", text)
+    if re.search(r"BOARD OF REVISION|FISCAL OFFICER|Delinquent Tax", flat, re.I):      # land-bank / tax foreclosure
+        out["tax"] = True
+        m = re.search(r"\(\$\s*([\d,]+\.\d{2})\)", flat)
+        if m:
+            out["amount_owed"] = _money(m.group(1))
+        m = re.search(r"PERMANENT PARCEL NUMBER\(S\):\s*(?:&\s*)?(\d[\d\-]{4,})", flat, re.I)
+        if m:
+            out["parcel"] = m.group(1)
+        i = re.search(r"PROPERTY ADDRESS(?:\(ES\))?:", flat, re.I)
+        if i:     # PDF columns interleave, so take the first "<no.> <street>, <city>, OH <zip>" after the label
+            m = re.search(r"(?<!OH )(?<!\d)\b(\d{1,6})\s+([A-Z][A-Z0-9 .'\-]+?),\s*([A-Z][A-Z .'\-]+?),\s*OH\s+(\d{5})",
+                          flat[i.end(): i.end() + 300], re.I)
+            if m:
+                out.update(street=_title(f"{m.group(1)} {m.group(2)}"), city=_title(m.group(3)), zip=m.group(4))
+        out["loan_type"] = "Tax lien"
+        return out
     m = (re.search(r"there is due the sum of\s*\$\s*([\d,]+(?:\.\d{2})?)", flat, re.I)
          or re.search(r"(?:principal balance|unpaid principal balance|balance) of\s*\$\s*([\d,]+(?:\.\d{2})?)", flat, re.I))
     if m:
@@ -142,27 +195,44 @@ def parse_service(text: str) -> dict:
     return {}
 
 
+def parse_owner_mailing(text: str) -> str:
+    """Tax-foreclosure service list: the first addressee's mailing address (often a PO Box / out of state)."""
+    m = re.search(r"\bto:\s*\n+\s*[^\n]+\n\s*([^\n]+)\n\s*([A-Za-z][A-Za-z .]+?),\s*([A-Z]{2})\s+(\d{5})", text)
+    if not m or re.match(r"\s*(&|AND\b)", m.group(1)):
+        return ""
+    return f"{_title(m.group(1).strip())}, {_title(m.group(2).strip())}, {m.group(3)} {m.group(4)}"
+
+
 def extract(docs: Dict[str, str]) -> dict:
     """Combine everything; keys are ready for LeadRecord."""
     rep, comp, svc = parse_report(docs.get("report", "")), parse_complaint(docs.get("complaint", "")), parse_service(docs.get("service", ""))
     out = {k: comp[k] for k in ("amount_owed", "interest_rate", "loan_type") if k in comp}
     out["modified"] = comp.get("modified", False)
-    for k in ("modified_principal",):
-        if k in comp:
-            out[k] = comp[k]
+    out["tax"] = bool(comp.get("tax"))
+    if "modified_principal" in comp:
+        out["modified_principal"] = comp["modified_principal"]
     for k in ("mortgage_amount", "mortgage_date", "record_owner"):
         if k in rep:
             out[k] = rep[k]
-    street, city, zip5 = rep.get("street"), rep.get("city"), rep.get("zip")
-    if not street and svc:                         # report missing: borrower's service address is the best guess
-        street, city, zip5 = svc["street"], svc["city"], svc["zip"]
-        out["address_source"] = "service address"
-    elif street:
-        out["address_source"] = "title report"
+    street, city, zip5 = comp.get("street"), comp.get("city"), comp.get("zip")      # tax complaints state it outright
+    if street:
+        out["address_source"] = "complaint"
+    else:
+        street, city, zip5 = rep.get("street"), rep.get("city"), rep.get("zip")
+        if street:
+            out["address_source"] = "title report"
+        elif svc and not comp.get("tax"):              # report missing: borrower's service address is the best guess
+            street, city, zip5 = svc["street"], svc["city"], svc["zip"]
+            out["address_source"] = "service address"
     if street:
         out.update(property_address=street, property_city=city or "", property_zip=zip5 or "")
-    if rep.get("parcel"):
-        out["parcel_number"] = rep["parcel"]
-    if svc:
+    parcel = comp.get("parcel") or rep.get("parcel")
+    if parcel:
+        out["parcel_number"] = parcel
+    if comp.get("tax"):
+        mail = parse_owner_mailing(docs.get("service", ""))
+        if mail:
+            out["mailing_address"] = mail
+    elif svc:
         out["served_at"] = f"{svc['street']}, {svc['city']}, {svc['state']} {svc['zip']}"
     return out

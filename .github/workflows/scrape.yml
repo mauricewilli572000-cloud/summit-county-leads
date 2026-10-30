@@ -34,6 +34,9 @@ jobs:
       - name: Install Python dependencies
         run: pip install -r requirements.txt
 
+      - name: Install OCR tools (some title reports are scanned images)
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq tesseract-ocr poppler-utils
+
       - name: Install Chromium (the clerk feed is JavaScript-rendered)
         run: python -m playwright install --with-deps chromium
 

@@ -98,3 +98,56 @@ def test_read_zip_ignores_bad_pdf():
     with zipfile.ZipFile(buf, "w") as z:
         z.writestr("1_2_FORECLOSURE_COMPLAINT.pdf", b"not a pdf")
     assert doc_extract.read_zip(buf.getvalue()) == {}
+
+
+TAX_COMPLAINT = """IN THE BOARD OF REVISION
+KRISTEN M. SCALISE CASE NO:
+As Fiscal Officer of Summit County, Ohio
+NORTH TEXAS ENTERPRISES INC
+PO BOX 2861
+AMARILLO, TX 79105 PERMANENT PARCEL NUMBER(S):
+& 67-53387
+2701 MACKENZIE TRL
+AMARILLO, TX 79124 YEAR(S) CERTIFIED:
+2007
+CITY OF AKRON
+172 S BROADWAY ST, SUITE 200 PROPERTY ADDRESS(ES):
+AKRON, OH 44308 908 JOHNSTON ST, AKRON, OH 44306
+Defendant(s)
+3. there appears THIRTY-FOUR THOUSAND FOUR HUNDRED SIXTY-EIGHT AND 33/100 DOLLARS ($34,468.33) appearing to be due"""
+TAX_SERVICE = """INSTRUCTIONS FOR SERVICE
+You are hereby requested to make CERTIFIED MAIL service of the Complaint to:
+
+NORTH TEXAS ENTERPRISES INC
+PO BOX 2861
+AMARILLO, TX 79105
+&
+2701 MACKENZIE TRL
+AMARILLO, TX 79124
+"""
+SCANNED_REPORT = "Schedule A\nDESCRIPTION OF THE LAND\nProperty Address: 908 Johnston St\nAkron, Ohio 44306\nSituated in"
+
+
+def test_tax_foreclosure_docs():
+    import doc_extract
+    info = doc_extract.extract({"complaint": TAX_COMPLAINT, "service": TAX_SERVICE,
+                                "report": "is at the date hereof vested in North Texas Enterprises, inc. by instrument recorded"})
+    assert info["tax"] and info["amount_owed"] == 34468.33 and info["loan_type"] == "Tax lien"
+    assert (info["property_address"], info["property_city"], info["property_zip"]) == ("908 Johnston St", "Akron", "44306")
+    assert info["parcel_number"] == "67-53387" and info["mailing_address"] == "PO Box 2861, Amarillo, TX 79105"
+    row = {"case_name": "KRISTEN M SCALISE -VS- NORTH TEXAS ENTERPRISES INC", "date_added_raw": f"{D} 5:26 PM",
+           "date_added": "2026-10-30", "category": "Land Bank Tax Foreclosure", "review_status": "Pending Review"}
+    lead = lead_builder.build_lead(row)
+    lead_builder.apply_docs(lead, info)
+    assert lead.lead_type == "Tax Foreclosure" and lead.plaintiff == "Summit County Fiscal Officer"
+    assert lead.mailing_address.startswith("PO Box 2861") and "No individual owner named" not in lead.flags
+
+
+def test_two_line_report_address_and_doc_kinds():
+    import doc_extract
+    rep = doc_extract.parse_report(SCANNED_REPORT)
+    assert (rep["street"], rep["city"], rep["zip"]) == ("908 Johnston St", "Akron", "44306")
+    assert doc_extract.doc_kind("1_1006_FORECLOSURE_COMPLAINT.pdf") == "complaint"
+    assert doc_extract.doc_kind("1_2964_NOTICE_OF_SUMMONS_AND_COMPLAINT.pdf") == "other"
+    assert doc_extract.doc_kind("1_738_TITLE_INVOICE.pdf") == "other"
+    assert doc_extract.doc_kind("1_663_PRELIMINARY_JUDICIAL_REPORT.pdf") == "report"
