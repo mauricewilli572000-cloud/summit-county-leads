@@ -1,6 +1,6 @@
 {
   "county": "Summit",
-  "generated_at": "2026-10-30T22:23:23.060706Z",
+  "generated_at": "2026-10-31T01:47:50.781103Z",
   "total_leads": 14,
   "leads_with_property_address": 12,
   "leads_with_mailing_address": 2,
@@ -113,7 +113,7 @@
       "added_date": "2026-10-30",
       "flags": [
         "Pending clerk review",
-        "Address from complaint"
+        "No individual owner named"
       ]
     },
     {
