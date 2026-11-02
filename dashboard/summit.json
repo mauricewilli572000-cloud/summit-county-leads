@@ -1,10 +1,10 @@
 {
   "county": "Summit",
-  "generated_at": "2026-11-02T01:45:22.322306Z",
-  "total_leads": 15,
-  "leads_with_property_address": 13,
+  "generated_at": "2026-11-02T20:30:55.333857Z",
+  "total_leads": 19,
+  "leads_with_property_address": 17,
   "leads_with_mailing_address": 2,
-  "average_lead_score": 81.1,
+  "average_lead_score": 81.3,
   "leads": [
     {
       "county": "Summit",
@@ -82,11 +82,38 @@
       "lead_score": 92,
       "source_url": "https://newcivilfilings.summitoh.net/",
       "case_name": "COMPUTERSHARE TRUST COMPANY, N.A., NOT I -VS- AAROH CAPITAL LLC",
-      "review_status": "Pending Review",
+      "review_status": "Filing Complete",
       "added_date": "2026-10-30",
       "flags": [
-        "Pending clerk review",
         "No individual owner named"
+      ]
+    },
+    {
+      "county": "Summit",
+      "case_number": "SUM-95AD1DCF",
+      "doc_number": "",
+      "owner_name": "Samuel J Jones",
+      "plaintiff": "Pennymac Loan Services LLC",
+      "defendant": "Samuel J Jones",
+      "property_address": "2480 Betula Avenue",
+      "property_city": "Akron",
+      "property_state": "OH",
+      "property_zip": "44320",
+      "parcel_number": "1501071",
+      "mailing_address": "",
+      "lead_type": "Foreclosure",
+      "filing_date": "11/02/2026",
+      "amount_owed": 106713.66,
+      "interest_rate": 6.25,
+      "loan_type": "FHA",
+      "lead_score": 92,
+      "source_url": "https://newcivilfilings.summitoh.net/",
+      "case_name": "PENNYMAC LOAN SERVICES LLC -VS- SAMUEL J JONES",
+      "review_status": "Pending Review",
+      "added_date": "2026-11-02",
+      "flags": [
+        "Pending clerk review",
+        "Address from title report"
       ]
     },
     {
@@ -110,7 +137,7 @@
       "lead_score": 87,
       "source_url": "https://newcivilfilings.summitoh.net/",
       "case_name": "CARRINGTON MORTGAGE SERVICES, LLC -VS- ERIN L SIMONETTI",
-      "review_status": "Pending Review",
+      "review_status": "Filing Complete",
       "added_date": "2026-10-30",
       "flags": [
         "Pending clerk review"
@@ -137,7 +164,7 @@
       "lead_score": 87,
       "source_url": "https://newcivilfilings.summitoh.net/",
       "case_name": "ROCKET MORTGAGE, LLC S/B/M NATIONSTAR MO -VS- MICHAEL D FEUDO",
-      "review_status": "Pending Review",
+      "review_status": "Filing Complete",
       "added_date": "2026-10-30",
       "flags": [
         "Pending clerk review"
@@ -255,6 +282,34 @@
     },
     {
       "county": "Summit",
+      "case_number": "SUM-8A601F76",
+      "doc_number": "",
+      "owner_name": "Kristen H. Wente",
+      "plaintiff": "Lakeview Loan Servicing, LLC",
+      "defendant": "Kristen H. Wente",
+      "property_address": "2390 Roth Drive",
+      "property_city": "Cuyahoga Falls",
+      "property_state": "OH",
+      "property_zip": "44221",
+      "parcel_number": "0207160",
+      "mailing_address": "",
+      "lead_type": "Foreclosure",
+      "filing_date": "11/02/2026",
+      "amount_owed": null,
+      "interest_rate": 7.125,
+      "loan_type": "FHA",
+      "lead_score": 82,
+      "source_url": "https://newcivilfilings.summitoh.net/",
+      "case_name": "LAKEVIEW LOAN SERVICING, LLC -VS- KRISTEN H. WENTE AKA KRISTEN H. WILLIAMS",
+      "review_status": "Pending Review",
+      "added_date": "2026-11-02",
+      "flags": [
+        "Pending clerk review",
+        "Address from complaint"
+      ]
+    },
+    {
+      "county": "Summit",
       "case_number": "SUM-5DDA1B72",
       "doc_number": "",
       "owner_name": "Matthew Kristoff",
@@ -306,7 +361,62 @@
       "added_date": "2026-11-02",
       "flags": [
         "Pending clerk review",
-        "No individual owner named",
+        "No individual owner named"
+      ]
+    },
+    {
+      "county": "Summit",
+      "case_number": "SUM-8FD58AEB",
+      "doc_number": "",
+      "owner_name": "Jeffrey A. Schiffer",
+      "plaintiff": "Kristen M Scalise",
+      "defendant": "Jeffrey A. Schiffer",
+      "property_address": "2803 Massillon Road",
+      "property_city": "Akron",
+      "property_state": "OH",
+      "property_zip": "44312",
+      "parcel_number": "28-00048",
+      "mailing_address": "",
+      "lead_type": "Foreclosure",
+      "filing_date": "11/02/2026",
+      "amount_owed": null,
+      "interest_rate": null,
+      "loan_type": "",
+      "lead_score": 77,
+      "source_url": "https://newcivilfilings.summitoh.net/",
+      "case_name": "KRISTEN M SCALISE -VS- JEFFREY A. SCHIFFER",
+      "review_status": "Pending Review",
+      "added_date": "2026-11-02",
+      "flags": [
+        "Pending clerk review",
+        "Address from title report"
+      ]
+    },
+    {
+      "county": "Summit",
+      "case_number": "SUM-BC542396",
+      "doc_number": "",
+      "owner_name": "Tina Borotkanics",
+      "plaintiff": "Kristen M Scalise",
+      "defendant": "Tina Borotkanics",
+      "property_address": "228 E Cassell Ave",
+      "property_city": "",
+      "property_state": "OH",
+      "property_zip": "",
+      "parcel_number": "01-01247",
+      "mailing_address": "",
+      "lead_type": "Foreclosure",
+      "filing_date": "11/02/2026",
+      "amount_owed": null,
+      "interest_rate": null,
+      "loan_type": "",
+      "lead_score": 77,
+      "source_url": "https://newcivilfilings.summitoh.net/",
+      "case_name": "KRISTEN M SCALISE -VS- TINA BOROTKANICS",
+      "review_status": "Pending Review",
+      "added_date": "2026-11-02",
+      "flags": [
+        "Pending clerk review",
         "Address from title report"
       ]
     },
