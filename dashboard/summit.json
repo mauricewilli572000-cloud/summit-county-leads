@@ -1,10 +1,10 @@
 {
   "county": "Summit",
-  "generated_at": "2026-11-01T16:54:57.892059Z",
-  "total_leads": 14,
-  "leads_with_property_address": 12,
+  "generated_at": "2026-11-02T01:45:22.322306Z",
+  "total_leads": 15,
+  "leads_with_property_address": 13,
   "leads_with_mailing_address": 2,
-  "average_lead_score": 83.9,
+  "average_lead_score": 81.1,
   "leads": [
     {
       "county": "Summit",
@@ -63,33 +63,6 @@
     },
     {
       "county": "Summit",
-      "case_number": "SUM-808C6830",
-      "doc_number": "",
-      "owner_name": "Delores E Holland",
-      "plaintiff": "PNC Bank National Association",
-      "defendant": "Delores E Holland",
-      "property_address": "280 Jennings Ave",
-      "property_city": "Cuyahoga Falls",
-      "property_state": "OH",
-      "property_zip": "44221",
-      "parcel_number": "0212469",
-      "mailing_address": "",
-      "lead_type": "Foreclosure",
-      "filing_date": "10/29/2026",
-      "amount_owed": 27741.0,
-      "interest_rate": 8.24,
-      "loan_type": "Conventional",
-      "lead_score": 92,
-      "source_url": "https://newcivilfilings.summitoh.net/",
-      "case_name": "PNC BANK NATIONAL ASSOCIATION -VS- DELORES E HOLLAND",
-      "review_status": "Filing Complete",
-      "added_date": "2026-10-29",
-      "flags": [
-        "Address from complaint"
-      ]
-    },
-    {
-      "county": "Summit",
       "case_number": "SUM-E6D1176D",
       "doc_number": "",
       "owner_name": "Aaroh Capital Llc,",
@@ -114,34 +87,6 @@
       "flags": [
         "Pending clerk review",
         "No individual owner named"
-      ]
-    },
-    {
-      "county": "Summit",
-      "case_number": "SUM-5DDA1B72",
-      "doc_number": "",
-      "owner_name": "Matthew Kristoff",
-      "plaintiff": "Rocket Mortgage, LLC s/b/m Nationstar Mo",
-      "defendant": "Matthew Kristoff",
-      "property_address": "1708 Robinwood Drive",
-      "property_city": "Uniontown",
-      "property_state": "OH",
-      "property_zip": "44685",
-      "parcel_number": "2810195",
-      "mailing_address": "",
-      "lead_type": "Foreclosure",
-      "filing_date": "10/29/2026",
-      "amount_owed": 114083.89,
-      "interest_rate": 3.0,
-      "loan_type": "FHA",
-      "lead_score": 87,
-      "source_url": "https://newcivilfilings.summitoh.net/",
-      "case_name": "ROCKET MORTGAGE, LLC S/B/M NATIONSTAR MO -VS- MATTHEW KRISTOFF A/K/A MATTHEW PAUL KRISTOFF",
-      "review_status": "Filing Complete",
-      "added_date": "2026-10-29",
-      "flags": [
-        "Address from title report",
-        "Loan modified"
       ]
     },
     {
@@ -256,6 +201,33 @@
     },
     {
       "county": "Summit",
+      "case_number": "SUM-808C6830",
+      "doc_number": "",
+      "owner_name": "Delores E Holland",
+      "plaintiff": "PNC Bank National Association",
+      "defendant": "Delores E Holland",
+      "property_address": "280 Jennings Ave",
+      "property_city": "Cuyahoga Falls",
+      "property_state": "OH",
+      "property_zip": "44221",
+      "parcel_number": "0212469",
+      "mailing_address": "",
+      "lead_type": "Foreclosure",
+      "filing_date": "10/29/2026",
+      "amount_owed": 27741.0,
+      "interest_rate": 8.24,
+      "loan_type": "Conventional",
+      "lead_score": 85,
+      "source_url": "https://newcivilfilings.summitoh.net/",
+      "case_name": "PNC BANK NATIONAL ASSOCIATION -VS- DELORES E HOLLAND",
+      "review_status": "Filing Complete",
+      "added_date": "2026-10-29",
+      "flags": [
+        "Address from complaint"
+      ]
+    },
+    {
+      "county": "Summit",
       "case_number": "SUM-1CF203C3",
       "doc_number": "",
       "owner_name": "Jack Igleheart",
@@ -283,6 +255,63 @@
     },
     {
       "county": "Summit",
+      "case_number": "SUM-5DDA1B72",
+      "doc_number": "",
+      "owner_name": "Matthew Kristoff",
+      "plaintiff": "Rocket Mortgage, LLC s/b/m Nationstar Mo",
+      "defendant": "Matthew Kristoff",
+      "property_address": "1708 Robinwood Drive",
+      "property_city": "Uniontown",
+      "property_state": "OH",
+      "property_zip": "44685",
+      "parcel_number": "2810195",
+      "mailing_address": "",
+      "lead_type": "Foreclosure",
+      "filing_date": "10/29/2026",
+      "amount_owed": 114083.89,
+      "interest_rate": 3.0,
+      "loan_type": "FHA",
+      "lead_score": 80,
+      "source_url": "https://newcivilfilings.summitoh.net/",
+      "case_name": "ROCKET MORTGAGE, LLC S/B/M NATIONSTAR MO -VS- MATTHEW KRISTOFF A/K/A MATTHEW PAUL KRISTOFF",
+      "review_status": "Filing Complete",
+      "added_date": "2026-10-29",
+      "flags": [
+        "Address from title report",
+        "Loan modified"
+      ]
+    },
+    {
+      "county": "Summit",
+      "case_number": "SUM-AE2DD98B",
+      "doc_number": "",
+      "owner_name": "",
+      "plaintiff": "Kristen M. Scalise",
+      "defendant": "Unknown Heirs Of Ronald B. Chadwell Jr.",
+      "property_address": "912 Redfern Ave",
+      "property_city": "",
+      "property_state": "OH",
+      "property_zip": "",
+      "parcel_number": "67-15315",
+      "mailing_address": "",
+      "lead_type": "Foreclosure",
+      "filing_date": "11/01/2026",
+      "amount_owed": null,
+      "interest_rate": null,
+      "loan_type": "",
+      "lead_score": 77,
+      "source_url": "https://newcivilfilings.summitoh.net/",
+      "case_name": "KRISTEN M. SCALISE -VS- UNKNOWN HEIRS OF RONALD B. CHADWELL JR.",
+      "review_status": "Pending Review",
+      "added_date": "2026-11-02",
+      "flags": [
+        "Pending clerk review",
+        "No individual owner named",
+        "Address from title report"
+      ]
+    },
+    {
+      "county": "Summit",
       "case_number": "SUM-3426EF0A",
       "doc_number": "",
       "owner_name": "Desirea D Kerney",
@@ -299,7 +328,7 @@
       "amount_owed": null,
       "interest_rate": 4.25,
       "loan_type": "FHA",
-      "lead_score": 77,
+      "lead_score": 70,
       "source_url": "https://newcivilfilings.summitoh.net/",
       "case_name": "LAKEVIEW LOAN SERVICING, LLC -VS- DESIREA D KERNEY",
       "review_status": "Filing Complete",
@@ -326,7 +355,7 @@
       "amount_owed": null,
       "interest_rate": null,
       "loan_type": "Conventional",
-      "lead_score": 77,
+      "lead_score": 70,
       "source_url": "https://newcivilfilings.summitoh.net/",
       "case_name": "VELVET A. GRABLE, TRUSTEE OF THE VELVET A. GRABLE FAMILY TRUST UAD 10/23/2017 -VS- RYAN STERRITT",
       "review_status": "Filing Complete",
@@ -334,31 +363,6 @@
       "flags": [
         "Address from title report"
       ]
-    },
-    {
-      "county": "Summit",
-      "case_number": "SUM-2BA61CD4",
-      "doc_number": "",
-      "owner_name": "Natasha D. Washington",
-      "plaintiff": "Bank Of America, N.A.",
-      "defendant": "Natasha D. Washington",
-      "property_address": "",
-      "property_city": "",
-      "property_state": "OH",
-      "property_zip": "",
-      "parcel_number": "",
-      "mailing_address": "",
-      "lead_type": "Foreclosure",
-      "filing_date": "10/29/2026",
-      "amount_owed": null,
-      "interest_rate": null,
-      "loan_type": "",
-      "lead_score": 65,
-      "source_url": "https://newcivilfilings.summitoh.net/",
-      "case_name": "BANK OF AMERICA, N.A. -VS- NATASHA D. WASHINGTON",
-      "review_status": "Filing Complete",
-      "added_date": "2026-10-29",
-      "flags": []
     },
     {
       "county": "Summit",
@@ -387,6 +391,31 @@
         "Pending clerk review",
         "No individual owner named"
       ]
+    },
+    {
+      "county": "Summit",
+      "case_number": "SUM-2BA61CD4",
+      "doc_number": "",
+      "owner_name": "Natasha D. Washington",
+      "plaintiff": "Bank Of America, N.A.",
+      "defendant": "Natasha D. Washington",
+      "property_address": "",
+      "property_city": "",
+      "property_state": "OH",
+      "property_zip": "",
+      "parcel_number": "",
+      "mailing_address": "",
+      "lead_type": "Foreclosure",
+      "filing_date": "10/29/2026",
+      "amount_owed": null,
+      "interest_rate": null,
+      "loan_type": "",
+      "lead_score": 58,
+      "source_url": "https://newcivilfilings.summitoh.net/",
+      "case_name": "BANK OF AMERICA, N.A. -VS- NATASHA D. WASHINGTON",
+      "review_status": "Filing Complete",
+      "added_date": "2026-10-29",
+      "flags": []
     }
   ]
 }
