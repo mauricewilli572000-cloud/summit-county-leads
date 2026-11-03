@@ -1,8 +1,8 @@
 {
   "county": "Summit",
-  "generated_at": "2026-11-03T03:40:45.640299Z",
-  "total_leads": 20,
-  "leads_with_property_address": 18,
+  "generated_at": "2026-11-03T18:01:00.017155Z",
+  "total_leads": 23,
+  "leads_with_property_address": 21,
   "leads_with_mailing_address": 2,
   "average_lead_score": 78.0,
   "leads": [
@@ -27,7 +27,7 @@
       "lead_score": 92,
       "source_url": "https://newcivilfilings.summitoh.net/",
       "case_name": "PENNYMAC LOAN SERVICES LLC -VS- SAMUEL J JONES",
-      "review_status": "Pending Review",
+      "review_status": "Filing Complete",
       "added_date": "2026-11-02",
       "flags": [
         "Pending clerk review"
@@ -54,10 +54,9 @@
       "lead_score": 88,
       "source_url": "https://newcivilfilings.summitoh.net/",
       "case_name": "KRISTEN M SCALISE -VS- NORTH TEXAS ENTERPRISES INC",
-      "review_status": "Pending Review",
+      "review_status": "Filing Complete",
       "added_date": "2026-10-30",
       "flags": [
-        "Pending clerk review",
         "No individual owner named"
       ]
     },
@@ -82,7 +81,7 @@
       "lead_score": 88,
       "source_url": "https://newcivilfilings.summitoh.net/",
       "case_name": "KRISTEN M SCALISE -VS- LEON LOWDEN",
-      "review_status": "Pending Review",
+      "review_status": "Filing Complete",
       "added_date": "2026-10-30",
       "flags": [
         "Pending clerk review"
@@ -163,10 +162,38 @@
       "lead_score": 82,
       "source_url": "https://newcivilfilings.summitoh.net/",
       "case_name": "LAKEVIEW LOAN SERVICING, LLC -VS- KRISTEN H. WENTE AKA KRISTEN H. WILLIAMS",
-      "review_status": "Pending Review",
+      "review_status": "Filing Complete",
       "added_date": "2026-11-02",
       "flags": [
         "Pending clerk review"
+      ]
+    },
+    {
+      "county": "Summit",
+      "case_number": "SUM-7AB4009A",
+      "doc_number": "",
+      "owner_name": "Jasmin Powell",
+      "plaintiff": "U.S. Bank National Association",
+      "defendant": "Jasmin Powell",
+      "property_address": "74 Jewett Street",
+      "property_city": "Akron",
+      "property_state": "OH",
+      "property_zip": "44305",
+      "parcel_number": "67-24907",
+      "mailing_address": "",
+      "lead_type": "Foreclosure",
+      "filing_date": "11/03/2026",
+      "amount_owed": null,
+      "interest_rate": 6.625,
+      "loan_type": "Conventional",
+      "lead_score": 82,
+      "source_url": "https://newcivilfilings.summitoh.net/",
+      "case_name": "U.S. BANK NATIONAL ASSOCIATION -VS- JASMIN POWELL",
+      "review_status": "Pending Review",
+      "added_date": "2026-11-03",
+      "flags": [
+        "Pending clerk review",
+        "Address from complaint"
       ]
     },
     {
@@ -272,10 +299,9 @@
       "lead_score": 80,
       "source_url": "https://newcivilfilings.summitoh.net/",
       "case_name": "KRISTEN M SCALISE -VS- FIRST CHOICE REALTY HOLDINGS LLC",
-      "review_status": "Pending Review",
+      "review_status": "Filing Complete",
       "added_date": "2026-10-30",
       "flags": [
-        "Pending clerk review",
         "No individual owner named"
       ]
     },
@@ -300,10 +326,9 @@
       "lead_score": 80,
       "source_url": "https://newcivilfilings.summitoh.net/",
       "case_name": "KRISTEN M SCALISE -VS- LANDERS REAL ESTATE ACQUISITIONS, LLC",
-      "review_status": "Pending Review",
+      "review_status": "Filing Complete",
       "added_date": "2026-10-30",
       "flags": [
-        "Pending clerk review",
         "No individual owner named"
       ]
     },
@@ -328,10 +353,9 @@
       "lead_score": 77,
       "source_url": "https://newcivilfilings.summitoh.net/",
       "case_name": "KRISTEN M. SCALISE -VS- UNKNOWN HEIRS OF RONALD B. CHADWELL JR.",
-      "review_status": "Pending Review",
+      "review_status": "Filing Complete",
       "added_date": "2026-11-02",
       "flags": [
-        "Pending clerk review",
         "No individual owner named"
       ]
     },
@@ -356,7 +380,7 @@
       "lead_score": 77,
       "source_url": "https://newcivilfilings.summitoh.net/",
       "case_name": "KRISTEN M SCALISE -VS- JEFFREY A. SCHIFFER",
-      "review_status": "Pending Review",
+      "review_status": "Filing Complete",
       "added_date": "2026-11-02",
       "flags": [
         "Pending clerk review"
@@ -383,7 +407,7 @@
       "lead_score": 77,
       "source_url": "https://newcivilfilings.summitoh.net/",
       "case_name": "KRISTEN M SCALISE -VS- TINA BOROTKANICS",
-      "review_status": "Pending Review",
+      "review_status": "Filing Complete",
       "added_date": "2026-11-02",
       "flags": [
         "Pending clerk review"
@@ -410,6 +434,62 @@
       "lead_score": 77,
       "source_url": "https://newcivilfilings.summitoh.net/",
       "case_name": "PENNYMAC LOAN SERVICES, LLC -VS- DELANI A SHIELDS",
+      "review_status": "Filing Complete",
+      "added_date": "2026-11-03",
+      "flags": [
+        "Pending clerk review",
+        "Address from title report"
+      ]
+    },
+    {
+      "county": "Summit",
+      "case_number": "SUM-F16B1BD3",
+      "doc_number": "",
+      "owner_name": "Juana J. Gorden",
+      "plaintiff": "Kristen M Scalise",
+      "defendant": "Juana J. Gorden",
+      "property_address": "122 E Ido Ave",
+      "property_city": "",
+      "property_state": "OH",
+      "property_zip": "",
+      "parcel_number": "68-16903",
+      "mailing_address": "",
+      "lead_type": "Foreclosure",
+      "filing_date": "11/03/2026",
+      "amount_owed": null,
+      "interest_rate": null,
+      "loan_type": "",
+      "lead_score": 77,
+      "source_url": "https://newcivilfilings.summitoh.net/",
+      "case_name": "KRISTEN M SCALISE -VS- JUANA J. GORDEN",
+      "review_status": "Pending Review",
+      "added_date": "2026-11-03",
+      "flags": [
+        "Pending clerk review",
+        "Address from title report"
+      ]
+    },
+    {
+      "county": "Summit",
+      "case_number": "SUM-4D43CDAA",
+      "doc_number": "",
+      "owner_name": "Charles Murphy",
+      "plaintiff": "Kristen M Scalise",
+      "defendant": "Charles Murphy",
+      "property_address": "493 Dayton Street",
+      "property_city": "Akron",
+      "property_state": "OH",
+      "property_zip": "44310",
+      "parcel_number": "68-17363",
+      "mailing_address": "",
+      "lead_type": "Foreclosure",
+      "filing_date": "11/03/2026",
+      "amount_owed": null,
+      "interest_rate": null,
+      "loan_type": "",
+      "lead_score": 77,
+      "source_url": "https://newcivilfilings.summitoh.net/",
+      "case_name": "KRISTEN M SCALISE -VS- CHARLES MURPHY",
       "review_status": "Pending Review",
       "added_date": "2026-11-03",
       "flags": [
@@ -438,7 +518,7 @@
       "lead_score": 75,
       "source_url": "https://newcivilfilings.summitoh.net/",
       "case_name": "AMERIHOME MORTGAGE COMPANY LLC -VS- JACK IGLEHEART",
-      "review_status": "Pending Review",
+      "review_status": "Filing Complete",
       "added_date": "2026-10-30",
       "flags": [
         "Pending clerk review"
@@ -544,10 +624,9 @@
       "lead_score": 58,
       "source_url": "https://newcivilfilings.summitoh.net/",
       "case_name": "KRISTEN M SCALISE -VS- UNKNOWN HEIRS OF MICHELINE MCDANIEL",
-      "review_status": "Pending Review",
+      "review_status": "Filing Complete",
       "added_date": "2026-10-30",
       "flags": [
-        "Pending clerk review",
         "No individual owner named"
       ]
     }
