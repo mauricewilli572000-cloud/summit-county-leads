@@ -1,10 +1,10 @@
 {
   "county": "Summit",
-  "generated_at": "2026-11-04T02:39:13.822766Z",
-  "total_leads": 25,
-  "leads_with_property_address": 22,
+  "generated_at": "2026-11-04T18:18:55.845096Z",
+  "total_leads": 29,
+  "leads_with_property_address": 26,
   "leads_with_mailing_address": 2,
-  "average_lead_score": 77.7,
+  "average_lead_score": 77.9,
   "leads": [
     {
       "county": "Summit",
@@ -189,7 +189,7 @@
       "lead_score": 82,
       "source_url": "https://newcivilfilings.summitoh.net/",
       "case_name": "U.S. BANK NATIONAL ASSOCIATION -VS- JASMIN POWELL",
-      "review_status": "Pending Review",
+      "review_status": "Filing Complete",
       "added_date": "2026-11-03",
       "flags": [
         "Pending clerk review"
@@ -216,12 +216,67 @@
       "lead_score": 82,
       "source_url": "https://newcivilfilings.summitoh.net/",
       "case_name": "U.S. BANK TRUST NATIONAL ASSOCIATION, NO -VS- JENNIFER L. SCHENDEL",
-      "review_status": "Pending Review",
+      "review_status": "Filing Complete",
       "added_date": "2026-11-04",
       "flags": [
         "Pending clerk review",
         "Address from complaint",
         "Loan modified"
+      ]
+    },
+    {
+      "county": "Summit",
+      "case_number": "SUM-ED04B5CB",
+      "doc_number": "",
+      "owner_name": "Allison Bell",
+      "plaintiff": "US Bank National Association",
+      "defendant": "Allison Bell",
+      "property_address": "1321 Meriline Street",
+      "property_city": "Cuyahoga Falls",
+      "property_state": "OH",
+      "property_zip": "44221",
+      "parcel_number": "02-06699",
+      "mailing_address": "",
+      "lead_type": "Foreclosure",
+      "filing_date": "11/04/2026",
+      "amount_owed": null,
+      "interest_rate": 7.5,
+      "loan_type": "FHA",
+      "lead_score": 82,
+      "source_url": "https://newcivilfilings.summitoh.net/",
+      "case_name": "US BANK NATIONAL ASSOCIATION -VS- ALLISON BELL",
+      "review_status": "Filing Complete",
+      "added_date": "2026-11-04",
+      "flags": [
+        "Address from title report"
+      ]
+    },
+    {
+      "county": "Summit",
+      "case_number": "SUM-C4D03BBB",
+      "doc_number": "",
+      "owner_name": "",
+      "plaintiff": "Newrez LLC",
+      "defendant": "Unknown Heirs At Law Of The Estate Of Linda K Palmer Deceased",
+      "property_address": "554 Washington Ave.",
+      "property_city": "Barberton",
+      "property_state": "OH",
+      "property_zip": "44203",
+      "parcel_number": "0104364",
+      "mailing_address": "",
+      "lead_type": "Foreclosure",
+      "filing_date": "11/04/2026",
+      "amount_owed": null,
+      "interest_rate": 6.25,
+      "loan_type": "Conventional",
+      "lead_score": 82,
+      "source_url": "https://newcivilfilings.summitoh.net/",
+      "case_name": "NEWREZ LLC -VS- UNKNOWN HEIRS AT LAW OF THE ESTATE OF LINDA K PALMER DECEASED",
+      "review_status": "Filing Complete",
+      "added_date": "2026-11-04",
+      "flags": [
+        "No individual owner named",
+        "Address from title report"
       ]
     },
     {
@@ -490,7 +545,7 @@
       "lead_score": 77,
       "source_url": "https://newcivilfilings.summitoh.net/",
       "case_name": "KRISTEN M SCALISE -VS- JUANA J. GORDEN",
-      "review_status": "Pending Review",
+      "review_status": "Filing Complete",
       "added_date": "2026-11-03",
       "flags": [
         "Pending clerk review"
@@ -521,6 +576,60 @@
       "added_date": "2026-11-03",
       "flags": [
         "Pending clerk review",
+        "Address from title report"
+      ]
+    },
+    {
+      "county": "Summit",
+      "case_number": "SUM-3F403A66",
+      "doc_number": "",
+      "owner_name": "Sadik Atmaca",
+      "plaintiff": "Kristen M Scalise",
+      "defendant": "Sadik Atmaca",
+      "property_address": "872 E Crosier St",
+      "property_city": "",
+      "property_state": "OH",
+      "property_zip": "",
+      "parcel_number": "68-24047",
+      "mailing_address": "",
+      "lead_type": "Foreclosure",
+      "filing_date": "11/04/2026",
+      "amount_owed": null,
+      "interest_rate": null,
+      "loan_type": "",
+      "lead_score": 77,
+      "source_url": "https://newcivilfilings.summitoh.net/",
+      "case_name": "KRISTEN M SCALISE -VS- SADIK ATMACA",
+      "review_status": "Filing Complete",
+      "added_date": "2026-11-04",
+      "flags": [
+        "Address from title report"
+      ]
+    },
+    {
+      "county": "Summit",
+      "case_number": "SUM-7525060A",
+      "doc_number": "",
+      "owner_name": "Kristopher Stephens",
+      "plaintiff": "Kristen M Scalise",
+      "defendant": "Kristopher Stephens",
+      "property_address": "376 E. Voris Street",
+      "property_city": "Akron",
+      "property_state": "OH",
+      "property_zip": "44311",
+      "parcel_number": "67-33583",
+      "mailing_address": "",
+      "lead_type": "Foreclosure",
+      "filing_date": "11/04/2026",
+      "amount_owed": null,
+      "interest_rate": null,
+      "loan_type": "",
+      "lead_score": 77,
+      "source_url": "https://newcivilfilings.summitoh.net/",
+      "case_name": "KRISTEN M SCALISE -VS- KRISTOPHER STEPHENS",
+      "review_status": "Filing Complete",
+      "added_date": "2026-11-04",
+      "flags": [
         "Address from title report"
       ]
     },
@@ -626,10 +735,9 @@
       "lead_score": 65,
       "source_url": "https://newcivilfilings.summitoh.net/",
       "case_name": "WILMINGTON SAVINGS FUND SOCIETY, FSB, NO -VS- SAIPH PROPERTIES LLC",
-      "review_status": "Pending Review",
+      "review_status": "Filing Complete",
       "added_date": "2026-11-04",
       "flags": [
-        "Pending clerk review",
         "No individual owner named"
       ]
     },
