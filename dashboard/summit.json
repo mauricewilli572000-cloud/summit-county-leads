@@ -1,10 +1,10 @@
 {
   "county": "Summit",
-  "generated_at": "2026-11-03T18:01:00.017155Z",
-  "total_leads": 23,
-  "leads_with_property_address": 21,
+  "generated_at": "2026-11-04T02:39:13.822766Z",
+  "total_leads": 25,
+  "leads_with_property_address": 22,
   "leads_with_mailing_address": 2,
-  "average_lead_score": 78.0,
+  "average_lead_score": 77.7,
   "leads": [
     {
       "county": "Summit",
@@ -192,8 +192,36 @@
       "review_status": "Pending Review",
       "added_date": "2026-11-03",
       "flags": [
+        "Pending clerk review"
+      ]
+    },
+    {
+      "county": "Summit",
+      "case_number": "SUM-326E34CF",
+      "doc_number": "",
+      "owner_name": "Jennifer L. Schendel",
+      "plaintiff": "U.S. Bank Trust National Association, No",
+      "defendant": "Jennifer L. Schendel",
+      "property_address": "9891 Ravenna Road",
+      "property_city": "Twinsburg",
+      "property_state": "OH",
+      "property_zip": "44087",
+      "parcel_number": "6402914",
+      "mailing_address": "",
+      "lead_type": "Foreclosure",
+      "filing_date": "11/03/2026",
+      "amount_owed": null,
+      "interest_rate": 8.086,
+      "loan_type": "Conventional",
+      "lead_score": 82,
+      "source_url": "https://newcivilfilings.summitoh.net/",
+      "case_name": "U.S. BANK TRUST NATIONAL ASSOCIATION, NO -VS- JENNIFER L. SCHENDEL",
+      "review_status": "Pending Review",
+      "added_date": "2026-11-04",
+      "flags": [
         "Pending clerk review",
-        "Address from complaint"
+        "Address from complaint",
+        "Loan modified"
       ]
     },
     {
@@ -465,8 +493,7 @@
       "review_status": "Pending Review",
       "added_date": "2026-11-03",
       "flags": [
-        "Pending clerk review",
-        "Address from title report"
+        "Pending clerk review"
       ]
     },
     {
@@ -490,7 +517,7 @@
       "lead_score": 77,
       "source_url": "https://newcivilfilings.summitoh.net/",
       "case_name": "KRISTEN M SCALISE -VS- CHARLES MURPHY",
-      "review_status": "Pending Review",
+      "review_status": "Filing Complete",
       "added_date": "2026-11-03",
       "flags": [
         "Pending clerk review",
@@ -576,6 +603,34 @@
       "added_date": "2026-10-30",
       "flags": [
         "Address from title report"
+      ]
+    },
+    {
+      "county": "Summit",
+      "case_number": "SUM-34B8AA5B",
+      "doc_number": "",
+      "owner_name": "",
+      "plaintiff": "Wilmington Savings Fund Society, Fsb, No",
+      "defendant": "Saiph Properties Llc",
+      "property_address": "",
+      "property_city": "",
+      "property_state": "OH",
+      "property_zip": "",
+      "parcel_number": "",
+      "mailing_address": "",
+      "lead_type": "Foreclosure",
+      "filing_date": "11/03/2026",
+      "amount_owed": null,
+      "interest_rate": null,
+      "loan_type": "",
+      "lead_score": 65,
+      "source_url": "https://newcivilfilings.summitoh.net/",
+      "case_name": "WILMINGTON SAVINGS FUND SOCIETY, FSB, NO -VS- SAIPH PROPERTIES LLC",
+      "review_status": "Pending Review",
+      "added_date": "2026-11-04",
+      "flags": [
+        "Pending clerk review",
+        "No individual owner named"
       ]
     },
     {
