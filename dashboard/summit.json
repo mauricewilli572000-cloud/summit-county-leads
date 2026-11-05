@@ -1,10 +1,10 @@
 {
   "county": "Summit",
-  "generated_at": "2026-11-05T02:43:08.182247Z",
-  "total_leads": 29,
-  "leads_with_property_address": 26,
+  "generated_at": "2026-11-05T18:27:01.057178Z",
+  "total_leads": 31,
+  "leads_with_property_address": 28,
   "leads_with_mailing_address": 2,
-  "average_lead_score": 77.7,
+  "average_lead_score": 77.6,
   "leads": [
     {
       "county": "Summit",
@@ -602,6 +602,62 @@
       "review_status": "Filing Complete",
       "added_date": "2026-11-04",
       "flags": [
+        "Address from title report"
+      ]
+    },
+    {
+      "county": "Summit",
+      "case_number": "SUM-82D52B24",
+      "doc_number": "",
+      "owner_name": "Em & Em Properties Limited",
+      "plaintiff": "Kristen M Scalise",
+      "defendant": "Em, Em Properties Limited",
+      "property_address": "949 W. Exchange Street",
+      "property_city": "Akron",
+      "property_state": "OH",
+      "property_zip": "44302",
+      "parcel_number": "67-39186",
+      "mailing_address": "",
+      "lead_type": "Foreclosure",
+      "filing_date": "11/05/2026",
+      "amount_owed": null,
+      "interest_rate": null,
+      "loan_type": "",
+      "lead_score": 77,
+      "source_url": "https://newcivilfilings.summitoh.net/",
+      "case_name": "KRISTEN M SCALISE -VS- EM & EM PROPERTIES LIMITED",
+      "review_status": "Pending Review",
+      "added_date": "2026-11-05",
+      "flags": [
+        "Pending clerk review",
+        "Address from title report"
+      ]
+    },
+    {
+      "county": "Summit",
+      "case_number": "SUM-44474600",
+      "doc_number": "",
+      "owner_name": "",
+      "plaintiff": "Kristen M Scalise",
+      "defendant": "Guardian City Investments, Llc",
+      "property_address": "682 Allyn St",
+      "property_city": "",
+      "property_state": "OH",
+      "property_zip": "",
+      "parcel_number": "6819597",
+      "mailing_address": "",
+      "lead_type": "Foreclosure",
+      "filing_date": "11/05/2026",
+      "amount_owed": null,
+      "interest_rate": null,
+      "loan_type": "",
+      "lead_score": 77,
+      "source_url": "https://newcivilfilings.summitoh.net/",
+      "case_name": "KRISTEN M SCALISE -VS- GUARDIAN CITY INVESTMENTS, LLC",
+      "review_status": "Filing Complete",
+      "added_date": "2026-11-05",
+      "flags": [
+        "No individual owner named",
         "Address from title report"
       ]
     },
