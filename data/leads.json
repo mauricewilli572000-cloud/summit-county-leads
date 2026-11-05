@@ -277,8 +277,7 @@
     "review_status": "Filing Complete",
     "added_date": "2026-11-04",
     "flags": [
-      "No individual owner named",
-      "Address from title report"
+      "No individual owner named"
     ],
     "key": "SUMMIT:SUM-C4D03BBB"
   },
@@ -422,34 +421,6 @@
       "No individual owner named"
     ],
     "key": "SUMMIT:SUM-EB4B506C"
-  },
-  {
-    "county": "Summit",
-    "case_number": "SUM-AE2DD98B",
-    "doc_number": "",
-    "owner_name": "",
-    "plaintiff": "Kristen M. Scalise",
-    "defendant": "Unknown Heirs Of Ronald B. Chadwell Jr.",
-    "property_address": "912 Redfern Ave",
-    "property_city": "",
-    "property_state": "OH",
-    "property_zip": "",
-    "parcel_number": "67-15315",
-    "mailing_address": "",
-    "lead_type": "Foreclosure",
-    "filing_date": "11/01/2026",
-    "amount_owed": null,
-    "interest_rate": null,
-    "loan_type": "",
-    "lead_score": 77,
-    "source_url": "https://newcivilfilings.summitoh.net/",
-    "case_name": "KRISTEN M. SCALISE -VS- UNKNOWN HEIRS OF RONALD B. CHADWELL JR.",
-    "review_status": "Filing Complete",
-    "added_date": "2026-11-02",
-    "flags": [
-      "No individual owner named"
-    ],
-    "key": "SUMMIT:SUM-AE2DD98B"
   },
   {
     "county": "Summit",
@@ -732,6 +703,34 @@
       "Address from title report"
     ],
     "key": "SUMMIT:SUM-9C726A0D"
+  },
+  {
+    "county": "Summit",
+    "case_number": "SUM-AE2DD98B",
+    "doc_number": "",
+    "owner_name": "",
+    "plaintiff": "Kristen M. Scalise",
+    "defendant": "Unknown Heirs Of Ronald B. Chadwell Jr.",
+    "property_address": "912 Redfern Ave",
+    "property_city": "",
+    "property_state": "OH",
+    "property_zip": "",
+    "parcel_number": "67-15315",
+    "mailing_address": "",
+    "lead_type": "Foreclosure",
+    "filing_date": "11/01/2026",
+    "amount_owed": null,
+    "interest_rate": null,
+    "loan_type": "",
+    "lead_score": 70,
+    "source_url": "https://newcivilfilings.summitoh.net/",
+    "case_name": "KRISTEN M. SCALISE -VS- UNKNOWN HEIRS OF RONALD B. CHADWELL JR.",
+    "review_status": "Filing Complete",
+    "added_date": "2026-11-02",
+    "flags": [
+      "No individual owner named"
+    ],
+    "key": "SUMMIT:SUM-AE2DD98B"
   },
   {
     "county": "Summit",
