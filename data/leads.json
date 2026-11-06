@@ -76,7 +76,7 @@
     "lead_score": 87,
     "source_url": "https://newcivilfilings.summitoh.net/",
     "case_name": "NEW AMERICAN FUNDING, LLC FKA BROKER SOL -VS- JENNIFER METOYER",
-    "review_status": "Pending Review",
+    "review_status": "Filing Complete",
     "added_date": "2026-11-06",
     "flags": [
       "Pending clerk review",
@@ -303,7 +303,7 @@
     "lead_score": 82,
     "source_url": "https://newcivilfilings.summitoh.net/",
     "case_name": "TH MSR HOLDINGS LLC -VS- TODD S HAWLEY",
-    "review_status": "Pending Review",
+    "review_status": "Filing Complete",
     "added_date": "2026-11-06",
     "flags": [
       "Pending clerk review",
@@ -333,7 +333,7 @@
     "lead_score": 82,
     "source_url": "https://newcivilfilings.summitoh.net/",
     "case_name": "PENNYMAC LOAN SERVICES LLC -VS- MATTHEW S CYC",
-    "review_status": "Pending Review",
+    "review_status": "Filing Complete",
     "added_date": "2026-11-06",
     "flags": [
       "Pending clerk review",
@@ -617,7 +617,7 @@
     "lead_score": 77,
     "source_url": "https://newcivilfilings.summitoh.net/",
     "case_name": "KRISTEN M SCALISE -VS- EM & EM PROPERTIES LIMITED",
-    "review_status": "Pending Review",
+    "review_status": "Filing Complete",
     "added_date": "2026-11-05",
     "flags": [
       "Pending clerk review"
@@ -673,13 +673,127 @@
     "lead_score": 77,
     "source_url": "https://newcivilfilings.summitoh.net/",
     "case_name": "KRISTEN M SCALISE -VS- ASCETIC FINISHES, LLC",
+    "review_status": "Filing Complete",
+    "added_date": "2026-11-06",
+    "flags": [
+      "No individual owner named"
+    ],
+    "key": "SUMMIT:SUM-657348B2"
+  },
+  {
+    "county": "Summit",
+    "case_number": "SUM-5C619154",
+    "doc_number": "",
+    "owner_name": "David A. Molohosky",
+    "plaintiff": "Kristen M. Scalise",
+    "defendant": "David A. Molohosky",
+    "property_address": "798 Skyside Dr",
+    "property_city": "",
+    "property_state": "OH",
+    "property_zip": "",
+    "parcel_number": "28-01047",
+    "mailing_address": "",
+    "lead_type": "Foreclosure",
+    "filing_date": "11/06/2026",
+    "amount_owed": null,
+    "interest_rate": null,
+    "loan_type": "",
+    "lead_score": 77,
+    "source_url": "https://newcivilfilings.summitoh.net/",
+    "case_name": "KRISTEN M. SCALISE -VS- DAVID A. MOLOHOSKY",
     "review_status": "Pending Review",
     "added_date": "2026-11-06",
     "flags": [
       "Pending clerk review",
       "Address from title report"
     ],
-    "key": "SUMMIT:SUM-657348B2"
+    "key": "SUMMIT:SUM-5C619154"
+  },
+  {
+    "county": "Summit",
+    "case_number": "SUM-74F80FFD",
+    "doc_number": "",
+    "owner_name": "Robert E. Hug",
+    "plaintiff": "Kristen M Scalise",
+    "defendant": "Robert E. Hug",
+    "property_address": "1317 Vane Avenue",
+    "property_city": "Akron",
+    "property_state": "OH",
+    "property_zip": "44310",
+    "parcel_number": "67-42864",
+    "mailing_address": "",
+    "lead_type": "Foreclosure",
+    "filing_date": "11/06/2026",
+    "amount_owed": null,
+    "interest_rate": null,
+    "loan_type": "",
+    "lead_score": 77,
+    "source_url": "https://newcivilfilings.summitoh.net/",
+    "case_name": "KRISTEN M SCALISE -VS- ROBERT E. HUG",
+    "review_status": "Pending Review",
+    "added_date": "2026-11-06",
+    "flags": [
+      "Pending clerk review",
+      "Address from title report"
+    ],
+    "key": "SUMMIT:SUM-74F80FFD"
+  },
+  {
+    "county": "Summit",
+    "case_number": "SUM-79183375",
+    "doc_number": "",
+    "owner_name": "James E. McKisson",
+    "plaintiff": "Kristen M. Scalise",
+    "defendant": "James E. McKisson",
+    "property_address": "2985 Stanley Road",
+    "property_city": "Akron",
+    "property_state": "OH",
+    "property_zip": "44333",
+    "parcel_number": "09-02517",
+    "mailing_address": "",
+    "lead_type": "Foreclosure",
+    "filing_date": "11/06/2026",
+    "amount_owed": null,
+    "interest_rate": null,
+    "loan_type": "",
+    "lead_score": 77,
+    "source_url": "https://newcivilfilings.summitoh.net/",
+    "case_name": "KRISTEN M. SCALISE -VS- JAMES E. MCKISSON",
+    "review_status": "Pending Review",
+    "added_date": "2026-11-06",
+    "flags": [
+      "Pending clerk review",
+      "Address from title report"
+    ],
+    "key": "SUMMIT:SUM-79183375"
+  },
+  {
+    "county": "Summit",
+    "case_number": "SUM-C1CC7E95",
+    "doc_number": "",
+    "owner_name": "Jamika Raymond",
+    "plaintiff": "Kristen M. Scalise",
+    "defendant": "Jamika Raymond",
+    "property_address": "1422 Kendale Dr",
+    "property_city": "",
+    "property_state": "OH",
+    "property_zip": "",
+    "parcel_number": "68-35565",
+    "mailing_address": "",
+    "lead_type": "Foreclosure",
+    "filing_date": "11/06/2026",
+    "amount_owed": null,
+    "interest_rate": null,
+    "loan_type": "",
+    "lead_score": 77,
+    "source_url": "https://newcivilfilings.summitoh.net/",
+    "case_name": "KRISTEN M. SCALISE -VS- JAMIKA RAYMOND",
+    "review_status": "Filing Complete",
+    "added_date": "2026-11-06",
+    "flags": [
+      "Address from title report"
+    ],
+    "key": "SUMMIT:SUM-C1CC7E95"
   },
   {
     "county": "Summit",
@@ -955,13 +1069,41 @@
     "lead_score": 65,
     "source_url": "https://newcivilfilings.summitoh.net/",
     "case_name": "KRISTEN M SCALISE -VS- UNKNOWN HEIRS OF HOLLIS S PALMER",
+    "review_status": "Filing Complete",
+    "added_date": "2026-11-06",
+    "flags": [
+      "No individual owner named"
+    ],
+    "key": "SUMMIT:SUM-0DD5C5A3"
+  },
+  {
+    "county": "Summit",
+    "case_number": "SUM-37A0E5CC",
+    "doc_number": "",
+    "owner_name": "",
+    "plaintiff": "Loan Funder LLC",
+    "defendant": "Akron Massillon Rental Housing Llc",
+    "property_address": "",
+    "property_city": "",
+    "property_state": "OH",
+    "property_zip": "",
+    "parcel_number": "",
+    "mailing_address": "",
+    "lead_type": "Foreclosure",
+    "filing_date": "11/06/2026",
+    "amount_owed": null,
+    "interest_rate": null,
+    "loan_type": "",
+    "lead_score": 65,
+    "source_url": "https://newcivilfilings.summitoh.net/",
+    "case_name": "LOAN FUNDER LLC -VS- AKRON MASSILLON RENTAL HOUSING LLC",
     "review_status": "Pending Review",
     "added_date": "2026-11-06",
     "flags": [
       "Pending clerk review",
       "No individual owner named"
     ],
-    "key": "SUMMIT:SUM-0DD5C5A3"
+    "key": "SUMMIT:SUM-37A0E5CC"
   },
   {
     "county": "Summit",
