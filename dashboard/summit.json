@@ -1,11 +1,40 @@
 {
   "county": "Summit",
-  "generated_at": "2026-11-06T17:42:17.056129Z",
-  "total_leads": 41,
-  "leads_with_property_address": 36,
-  "leads_with_mailing_address": 2,
-  "average_lead_score": 76.5,
+  "generated_at": "2026-11-07T02:18:50.089928Z",
+  "total_leads": 47,
+  "leads_with_property_address": 41,
+  "leads_with_mailing_address": 3,
+  "average_lead_score": 76.3,
   "leads": [
+    {
+      "county": "Summit",
+      "case_number": "SUM-43432391",
+      "doc_number": "",
+      "owner_name": "Barbara Jean Garvin",
+      "plaintiff": "Summit County Fiscal Officer",
+      "defendant": "Barbara Jean Garvin",
+      "property_address": "2860 Marcia Blvd 746 Fern St.",
+      "property_city": "Akron",
+      "property_state": "OH",
+      "property_zip": "44307",
+      "parcel_number": "68-44543",
+      "mailing_address": "1020 Winter Way 172 S Broadway St, Suite 200, Lexington, SC 29073",
+      "lead_type": "Tax Foreclosure",
+      "filing_date": "11/06/2026",
+      "amount_owed": 59678.44,
+      "interest_rate": null,
+      "loan_type": "Tax lien",
+      "lead_score": 95,
+      "source_url": "https://newcivilfilings.summitoh.net/",
+      "case_name": "KRISTEN M SCALISE -VS- BARBARA JEAN GARVIN",
+      "review_status": "Pending Review",
+      "added_date": "2026-11-07",
+      "flags": [
+        "Pending clerk review",
+        "Address from complaint",
+        "Tax lien (county)"
+      ]
+    },
     {
       "county": "Summit",
       "case_number": "SUM-45AE42F9",
@@ -90,6 +119,35 @@
     },
     {
       "county": "Summit",
+      "case_number": "SUM-904935C5",
+      "doc_number": "",
+      "owner_name": "Unknown Successor To Peoples Choice Home",
+      "plaintiff": "Summit County Fiscal Officer",
+      "defendant": "Unknown Successor To Peoples Choice Home",
+      "property_address": "1673 Battery B St",
+      "property_city": "Akron",
+      "property_state": "OH",
+      "property_zip": "44305",
+      "parcel_number": "6709389",
+      "mailing_address": "",
+      "lead_type": "Tax Foreclosure",
+      "filing_date": "11/06/2026",
+      "amount_owed": 47046.53,
+      "interest_rate": null,
+      "loan_type": "Tax lien",
+      "lead_score": 87,
+      "source_url": "https://newcivilfilings.summitoh.net/",
+      "case_name": "KRISTEN M SCALISE -VS- UNKNOWN SUCCESSOR TO PEOPLES CHOICE HOME",
+      "review_status": "Pending Review",
+      "added_date": "2026-11-07",
+      "flags": [
+        "Pending clerk review",
+        "Address from complaint",
+        "Tax lien (county)"
+      ]
+    },
+    {
+      "county": "Summit",
       "case_number": "SUM-808C6830",
       "doc_number": "",
       "owner_name": "Delores E Holland",
@@ -167,62 +225,6 @@
       "added_date": "2026-11-02",
       "flags": [
         "Pending clerk review"
-      ]
-    },
-    {
-      "county": "Summit",
-      "case_number": "SUM-7AB4009A",
-      "doc_number": "",
-      "owner_name": "Jasmin Powell",
-      "plaintiff": "U.S. Bank National Association",
-      "defendant": "Jasmin Powell",
-      "property_address": "74 Jewett Street",
-      "property_city": "Akron",
-      "property_state": "OH",
-      "property_zip": "44305",
-      "parcel_number": "67-24907",
-      "mailing_address": "",
-      "lead_type": "Foreclosure",
-      "filing_date": "11/03/2026",
-      "amount_owed": null,
-      "interest_rate": 6.625,
-      "loan_type": "Conventional",
-      "lead_score": 82,
-      "source_url": "https://newcivilfilings.summitoh.net/",
-      "case_name": "U.S. BANK NATIONAL ASSOCIATION -VS- JASMIN POWELL",
-      "review_status": "Filing Complete",
-      "added_date": "2026-11-03",
-      "flags": [
-        "Pending clerk review"
-      ]
-    },
-    {
-      "county": "Summit",
-      "case_number": "SUM-326E34CF",
-      "doc_number": "",
-      "owner_name": "Jennifer L. Schendel",
-      "plaintiff": "U.S. Bank Trust National Association, No",
-      "defendant": "Jennifer L. Schendel",
-      "property_address": "9891 Ravenna Road",
-      "property_city": "Twinsburg",
-      "property_state": "OH",
-      "property_zip": "44087",
-      "parcel_number": "6402914",
-      "mailing_address": "",
-      "lead_type": "Foreclosure",
-      "filing_date": "11/03/2026",
-      "amount_owed": null,
-      "interest_rate": 8.086,
-      "loan_type": "Conventional",
-      "lead_score": 82,
-      "source_url": "https://newcivilfilings.summitoh.net/",
-      "case_name": "U.S. BANK TRUST NATIONAL ASSOCIATION, NO -VS- JENNIFER L. SCHENDEL",
-      "review_status": "Filing Complete",
-      "added_date": "2026-11-04",
-      "flags": [
-        "Pending clerk review",
-        "Address from complaint",
-        "Loan modified"
       ]
     },
     {
@@ -335,6 +337,34 @@
         "Pending clerk review",
         "Address from complaint",
         "Loan modified"
+      ]
+    },
+    {
+      "county": "Summit",
+      "case_number": "SUM-640F94DC",
+      "doc_number": "",
+      "owner_name": "Wilbert Ching",
+      "plaintiff": "Freedom Mortgage Corporation",
+      "defendant": "Wilbert Ching",
+      "property_address": "134 Elmdale Avenue",
+      "property_city": "Akron",
+      "property_state": "OH",
+      "property_zip": "44313",
+      "parcel_number": "6810267",
+      "mailing_address": "",
+      "lead_type": "Foreclosure",
+      "filing_date": "11/06/2026",
+      "amount_owed": null,
+      "interest_rate": 6.25,
+      "loan_type": "FHA",
+      "lead_score": 82,
+      "source_url": "https://newcivilfilings.summitoh.net/",
+      "case_name": "FREEDOM MORTGAGE CORPORATION -VS- WILBERT CHING",
+      "review_status": "Pending Review",
+      "added_date": "2026-11-07",
+      "flags": [
+        "Pending clerk review",
+        "Address from complaint"
       ]
     },
     {
@@ -471,61 +501,6 @@
       "added_date": "2026-10-30",
       "flags": [
         "No individual owner named"
-      ]
-    },
-    {
-      "county": "Summit",
-      "case_number": "SUM-F16B1BD3",
-      "doc_number": "",
-      "owner_name": "Juana J. Gorden",
-      "plaintiff": "Kristen M Scalise",
-      "defendant": "Juana J. Gorden",
-      "property_address": "122 E Ido Ave",
-      "property_city": "",
-      "property_state": "OH",
-      "property_zip": "",
-      "parcel_number": "68-16903",
-      "mailing_address": "",
-      "lead_type": "Foreclosure",
-      "filing_date": "11/03/2026",
-      "amount_owed": null,
-      "interest_rate": null,
-      "loan_type": "",
-      "lead_score": 77,
-      "source_url": "https://newcivilfilings.summitoh.net/",
-      "case_name": "KRISTEN M SCALISE -VS- JUANA J. GORDEN",
-      "review_status": "Filing Complete",
-      "added_date": "2026-11-03",
-      "flags": [
-        "Pending clerk review"
-      ]
-    },
-    {
-      "county": "Summit",
-      "case_number": "SUM-4D43CDAA",
-      "doc_number": "",
-      "owner_name": "Charles Murphy",
-      "plaintiff": "Kristen M Scalise",
-      "defendant": "Charles Murphy",
-      "property_address": "493 Dayton Street",
-      "property_city": "Akron",
-      "property_state": "OH",
-      "property_zip": "44310",
-      "parcel_number": "68-17363",
-      "mailing_address": "",
-      "lead_type": "Foreclosure",
-      "filing_date": "11/03/2026",
-      "amount_owed": null,
-      "interest_rate": null,
-      "loan_type": "",
-      "lead_score": 77,
-      "source_url": "https://newcivilfilings.summitoh.net/",
-      "case_name": "KRISTEN M SCALISE -VS- CHARLES MURPHY",
-      "review_status": "Filing Complete",
-      "added_date": "2026-11-03",
-      "flags": [
-        "Pending clerk review",
-        "Address from title report"
       ]
     },
     {
@@ -687,8 +662,7 @@
       "review_status": "Pending Review",
       "added_date": "2026-11-06",
       "flags": [
-        "Pending clerk review",
-        "Address from title report"
+        "Pending clerk review"
       ]
     },
     {
@@ -715,8 +689,7 @@
       "review_status": "Pending Review",
       "added_date": "2026-11-06",
       "flags": [
-        "Pending clerk review",
-        "Address from title report"
+        "Pending clerk review"
       ]
     },
     {
@@ -740,7 +713,7 @@
       "lead_score": 77,
       "source_url": "https://newcivilfilings.summitoh.net/",
       "case_name": "KRISTEN M. SCALISE -VS- JAMES E. MCKISSON",
-      "review_status": "Pending Review",
+      "review_status": "Filing Complete",
       "added_date": "2026-11-06",
       "flags": [
         "Pending clerk review",
@@ -771,6 +744,63 @@
       "review_status": "Filing Complete",
       "added_date": "2026-11-06",
       "flags": [
+        "Address from title report"
+      ]
+    },
+    {
+      "county": "Summit",
+      "case_number": "SUM-BEFEBCC5",
+      "doc_number": "",
+      "owner_name": "",
+      "plaintiff": "Kristen M. Scalise",
+      "defendant": "Unknown Heirs Of Annabel Krepps",
+      "property_address": "3102 Forget Me Not St",
+      "property_city": "",
+      "property_state": "OH",
+      "property_zip": "",
+      "parcel_number": "19-08814",
+      "mailing_address": "",
+      "lead_type": "Foreclosure",
+      "filing_date": "11/06/2026",
+      "amount_owed": null,
+      "interest_rate": null,
+      "loan_type": "",
+      "lead_score": 77,
+      "source_url": "https://newcivilfilings.summitoh.net/",
+      "case_name": "KRISTEN M. SCALISE -VS- UNKNOWN HEIRS OF ANNABEL KREPPS",
+      "review_status": "Pending Review",
+      "added_date": "2026-11-07",
+      "flags": [
+        "Pending clerk review",
+        "No individual owner named",
+        "Address from title report"
+      ]
+    },
+    {
+      "county": "Summit",
+      "case_number": "SUM-85127F6B",
+      "doc_number": "",
+      "owner_name": "Melissa A. Conley",
+      "plaintiff": "Kristen M Scalise",
+      "defendant": "Melissa A. Conley",
+      "property_address": "1121 Neptune Ave",
+      "property_city": "",
+      "property_state": "OH",
+      "property_zip": "",
+      "parcel_number": "68-19121",
+      "mailing_address": "",
+      "lead_type": "Foreclosure",
+      "filing_date": "11/06/2026",
+      "amount_owed": null,
+      "interest_rate": null,
+      "loan_type": "",
+      "lead_score": 77,
+      "source_url": "https://newcivilfilings.summitoh.net/",
+      "case_name": "KRISTEN M SCALISE -VS- MELISSA A. CONLEY",
+      "review_status": "Pending Review",
+      "added_date": "2026-11-07",
+      "flags": [
+        "Pending clerk review",
         "Address from title report"
       ]
     },
@@ -826,6 +856,62 @@
       "added_date": "2026-11-02",
       "flags": [
         "Pending clerk review"
+      ]
+    },
+    {
+      "county": "Summit",
+      "case_number": "SUM-7AB4009A",
+      "doc_number": "",
+      "owner_name": "Jasmin Powell",
+      "plaintiff": "U.S. Bank National Association",
+      "defendant": "Jasmin Powell",
+      "property_address": "74 Jewett Street",
+      "property_city": "Akron",
+      "property_state": "OH",
+      "property_zip": "44305",
+      "parcel_number": "67-24907",
+      "mailing_address": "",
+      "lead_type": "Foreclosure",
+      "filing_date": "11/03/2026",
+      "amount_owed": null,
+      "interest_rate": 6.625,
+      "loan_type": "Conventional",
+      "lead_score": 75,
+      "source_url": "https://newcivilfilings.summitoh.net/",
+      "case_name": "U.S. BANK NATIONAL ASSOCIATION -VS- JASMIN POWELL",
+      "review_status": "Filing Complete",
+      "added_date": "2026-11-03",
+      "flags": [
+        "Pending clerk review"
+      ]
+    },
+    {
+      "county": "Summit",
+      "case_number": "SUM-326E34CF",
+      "doc_number": "",
+      "owner_name": "Jennifer L. Schendel",
+      "plaintiff": "U.S. Bank Trust National Association, No",
+      "defendant": "Jennifer L. Schendel",
+      "property_address": "9891 Ravenna Road",
+      "property_city": "Twinsburg",
+      "property_state": "OH",
+      "property_zip": "44087",
+      "parcel_number": "6402914",
+      "mailing_address": "",
+      "lead_type": "Foreclosure",
+      "filing_date": "11/03/2026",
+      "amount_owed": null,
+      "interest_rate": 8.086,
+      "loan_type": "Conventional",
+      "lead_score": 75,
+      "source_url": "https://newcivilfilings.summitoh.net/",
+      "case_name": "U.S. BANK TRUST NATIONAL ASSOCIATION, NO -VS- JENNIFER L. SCHENDEL",
+      "review_status": "Filing Complete",
+      "added_date": "2026-11-04",
+      "flags": [
+        "Pending clerk review",
+        "Address from complaint",
+        "Loan modified"
       ]
     },
     {
@@ -993,29 +1079,57 @@
     },
     {
       "county": "Summit",
-      "case_number": "SUM-34B8AA5B",
+      "case_number": "SUM-F16B1BD3",
       "doc_number": "",
-      "owner_name": "",
-      "plaintiff": "Wilmington Savings Fund Society, Fsb, No",
-      "defendant": "Saiph Properties Llc",
-      "property_address": "",
+      "owner_name": "Juana J. Gorden",
+      "plaintiff": "Kristen M Scalise",
+      "defendant": "Juana J. Gorden",
+      "property_address": "122 E Ido Ave",
       "property_city": "",
       "property_state": "OH",
       "property_zip": "",
-      "parcel_number": "",
+      "parcel_number": "68-16903",
       "mailing_address": "",
       "lead_type": "Foreclosure",
       "filing_date": "11/03/2026",
       "amount_owed": null,
       "interest_rate": null,
       "loan_type": "",
-      "lead_score": 65,
+      "lead_score": 70,
       "source_url": "https://newcivilfilings.summitoh.net/",
-      "case_name": "WILMINGTON SAVINGS FUND SOCIETY, FSB, NO -VS- SAIPH PROPERTIES LLC",
+      "case_name": "KRISTEN M SCALISE -VS- JUANA J. GORDEN",
       "review_status": "Filing Complete",
-      "added_date": "2026-11-04",
+      "added_date": "2026-11-03",
       "flags": [
-        "No individual owner named"
+        "Pending clerk review"
+      ]
+    },
+    {
+      "county": "Summit",
+      "case_number": "SUM-4D43CDAA",
+      "doc_number": "",
+      "owner_name": "Charles Murphy",
+      "plaintiff": "Kristen M Scalise",
+      "defendant": "Charles Murphy",
+      "property_address": "493 Dayton Street",
+      "property_city": "Akron",
+      "property_state": "OH",
+      "property_zip": "44310",
+      "parcel_number": "68-17363",
+      "mailing_address": "",
+      "lead_type": "Foreclosure",
+      "filing_date": "11/03/2026",
+      "amount_owed": null,
+      "interest_rate": null,
+      "loan_type": "",
+      "lead_score": 70,
+      "source_url": "https://newcivilfilings.summitoh.net/",
+      "case_name": "KRISTEN M SCALISE -VS- CHARLES MURPHY",
+      "review_status": "Filing Complete",
+      "added_date": "2026-11-03",
+      "flags": [
+        "Pending clerk review",
+        "Address from title report"
       ]
     },
     {
@@ -1075,6 +1189,34 @@
     },
     {
       "county": "Summit",
+      "case_number": "SUM-1DC6548D",
+      "doc_number": "",
+      "owner_name": "",
+      "plaintiff": "Summit County Fiscal Officer",
+      "defendant": "Unknown Successor To Evergreen Homes Llc",
+      "property_address": "",
+      "property_city": "",
+      "property_state": "OH",
+      "property_zip": "",
+      "parcel_number": "",
+      "mailing_address": "",
+      "lead_type": "Tax Foreclosure",
+      "filing_date": "11/06/2026",
+      "amount_owed": null,
+      "interest_rate": null,
+      "loan_type": "",
+      "lead_score": 65,
+      "source_url": "https://newcivilfilings.summitoh.net/",
+      "case_name": "KRISTEN M SCALISE -VS- UNKNOWN SUCCESSOR TO EVERGREEN HOMES LLC",
+      "review_status": "Pending Review",
+      "added_date": "2026-11-07",
+      "flags": [
+        "Pending clerk review",
+        "No individual owner named"
+      ]
+    },
+    {
+      "county": "Summit",
       "case_number": "SUM-2BA61CD4",
       "doc_number": "",
       "owner_name": "Natasha D. Washington",
@@ -1121,6 +1263,33 @@
       "case_name": "KRISTEN M SCALISE -VS- UNKNOWN HEIRS OF MICHELINE MCDANIEL",
       "review_status": "Filing Complete",
       "added_date": "2026-10-30",
+      "flags": [
+        "No individual owner named"
+      ]
+    },
+    {
+      "county": "Summit",
+      "case_number": "SUM-34B8AA5B",
+      "doc_number": "",
+      "owner_name": "",
+      "plaintiff": "Wilmington Savings Fund Society, Fsb, No",
+      "defendant": "Saiph Properties Llc",
+      "property_address": "",
+      "property_city": "",
+      "property_state": "OH",
+      "property_zip": "",
+      "parcel_number": "",
+      "mailing_address": "",
+      "lead_type": "Foreclosure",
+      "filing_date": "11/03/2026",
+      "amount_owed": null,
+      "interest_rate": null,
+      "loan_type": "",
+      "lead_score": 58,
+      "source_url": "https://newcivilfilings.summitoh.net/",
+      "case_name": "WILMINGTON SAVINGS FUND SOCIETY, FSB, NO -VS- SAIPH PROPERTIES LLC",
+      "review_status": "Filing Complete",
+      "added_date": "2026-11-04",
       "flags": [
         "No individual owner named"
       ]
