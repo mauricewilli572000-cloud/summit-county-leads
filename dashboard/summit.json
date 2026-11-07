@@ -1,6 +1,6 @@
 {
   "county": "Summit",
-  "generated_at": "2026-11-07T02:18:50.089928Z",
+  "generated_at": "2026-11-07T16:36:56.225209Z",
   "total_leads": 47,
   "leads_with_property_address": 41,
   "leads_with_mailing_address": 3,
@@ -30,9 +30,7 @@
       "review_status": "Pending Review",
       "added_date": "2026-11-07",
       "flags": [
-        "Pending clerk review",
-        "Address from complaint",
-        "Tax lien (county)"
+        "Pending clerk review"
       ]
     },
     {
@@ -141,9 +139,7 @@
       "review_status": "Pending Review",
       "added_date": "2026-11-07",
       "flags": [
-        "Pending clerk review",
-        "Address from complaint",
-        "Tax lien (county)"
+        "Pending clerk review"
       ]
     },
     {
@@ -363,8 +359,7 @@
       "review_status": "Pending Review",
       "added_date": "2026-11-07",
       "flags": [
-        "Pending clerk review",
-        "Address from complaint"
+        "Pending clerk review"
       ]
     },
     {
@@ -772,8 +767,7 @@
       "added_date": "2026-11-07",
       "flags": [
         "Pending clerk review",
-        "No individual owner named",
-        "Address from title report"
+        "No individual owner named"
       ]
     },
     {
@@ -800,8 +794,7 @@
       "review_status": "Pending Review",
       "added_date": "2026-11-07",
       "flags": [
-        "Pending clerk review",
-        "Address from title report"
+        "Pending clerk review"
       ]
     },
     {

@@ -23,9 +23,7 @@
     "review_status": "Pending Review",
     "added_date": "2026-11-07",
     "flags": [
-      "Pending clerk review",
-      "Address from complaint",
-      "Tax lien (county)"
+      "Pending clerk review"
     ],
     "key": "SUMMIT:SUM-43432391"
   },
@@ -138,9 +136,7 @@
     "review_status": "Pending Review",
     "added_date": "2026-11-07",
     "flags": [
-      "Pending clerk review",
-      "Address from complaint",
-      "Tax lien (county)"
+      "Pending clerk review"
     ],
     "key": "SUMMIT:SUM-904935C5"
   },
@@ -368,8 +364,7 @@
     "review_status": "Pending Review",
     "added_date": "2026-11-07",
     "flags": [
-      "Pending clerk review",
-      "Address from complaint"
+      "Pending clerk review"
     ],
     "key": "SUMMIT:SUM-640F94DC"
   },
@@ -792,8 +787,7 @@
     "added_date": "2026-11-07",
     "flags": [
       "Pending clerk review",
-      "No individual owner named",
-      "Address from title report"
+      "No individual owner named"
     ],
     "key": "SUMMIT:SUM-BEFEBCC5"
   },
@@ -821,8 +815,7 @@
     "review_status": "Pending Review",
     "added_date": "2026-11-07",
     "flags": [
-      "Pending clerk review",
-      "Address from title report"
+      "Pending clerk review"
     ],
     "key": "SUMMIT:SUM-85127F6B"
   },
