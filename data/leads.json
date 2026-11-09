@@ -20,7 +20,7 @@
     "lead_score": 95,
     "source_url": "https://newcivilfilings.summitoh.net/",
     "case_name": "KRISTEN M SCALISE -VS- BARBARA JEAN GARVIN",
-    "review_status": "Pending Review",
+    "review_status": "Filing Complete",
     "added_date": "2026-11-07",
     "flags": [
       "Pending clerk review"
@@ -104,7 +104,7 @@
     "lead_score": 87,
     "source_url": "https://newcivilfilings.summitoh.net/",
     "case_name": "KRISTEN M SCALISE -VS- UNKNOWN SUCCESSOR TO PEOPLES CHOICE HOME",
-    "review_status": "Pending Review",
+    "review_status": "Filing Complete",
     "added_date": "2026-11-07",
     "flags": [
       "Pending clerk review"
@@ -222,6 +222,34 @@
       "Pending clerk review"
     ],
     "key": "SUMMIT:SUM-640F94DC"
+  },
+  {
+    "county": "Summit",
+    "case_number": "SUM-DA1F8C53",
+    "doc_number": "",
+    "owner_name": "Valeria L. Johnson",
+    "plaintiff": "U.S. Bank National Association",
+    "defendant": "Valeria L. Johnson",
+    "property_address": "378 E Ido Avenue",
+    "property_city": "Akron",
+    "property_state": "OH",
+    "property_zip": "44301",
+    "parcel_number": "67-41760",
+    "mailing_address": "",
+    "lead_type": "Foreclosure",
+    "filing_date": "11/09/2026",
+    "amount_owed": null,
+    "interest_rate": 6.0,
+    "loan_type": "Conventional",
+    "lead_score": 82,
+    "source_url": "https://newcivilfilings.summitoh.net/",
+    "case_name": "U.S. BANK NATIONAL ASSOCIATION -VS- VALERIA L. JOHNSON",
+    "review_status": "Filing Complete",
+    "added_date": "2026-11-09",
+    "flags": [
+      "Address from title report"
+    ],
+    "key": "SUMMIT:SUM-DA1F8C53"
   },
   {
     "county": "Summit",
@@ -414,7 +442,7 @@
     "lead_score": 77,
     "source_url": "https://newcivilfilings.summitoh.net/",
     "case_name": "KRISTEN M. SCALISE -VS- DAVID A. MOLOHOSKY",
-    "review_status": "Pending Review",
+    "review_status": "Filing Complete",
     "added_date": "2026-11-06",
     "flags": [
       "Pending clerk review"
@@ -442,7 +470,7 @@
     "lead_score": 77,
     "source_url": "https://newcivilfilings.summitoh.net/",
     "case_name": "KRISTEN M SCALISE -VS- ROBERT E. HUG",
-    "review_status": "Pending Review",
+    "review_status": "Filing Complete",
     "added_date": "2026-11-06",
     "flags": [
       "Pending clerk review"
@@ -527,10 +555,9 @@
     "lead_score": 77,
     "source_url": "https://newcivilfilings.summitoh.net/",
     "case_name": "KRISTEN M. SCALISE -VS- UNKNOWN HEIRS OF ANNABEL KREPPS",
-    "review_status": "Pending Review",
+    "review_status": "Filing Complete",
     "added_date": "2026-11-07",
     "flags": [
-      "Pending clerk review",
       "No individual owner named"
     ],
     "key": "SUMMIT:SUM-BEFEBCC5"
@@ -556,12 +583,211 @@
     "lead_score": 77,
     "source_url": "https://newcivilfilings.summitoh.net/",
     "case_name": "KRISTEN M SCALISE -VS- MELISSA A. CONLEY",
-    "review_status": "Pending Review",
+    "review_status": "Filing Complete",
     "added_date": "2026-11-07",
     "flags": [
       "Pending clerk review"
     ],
     "key": "SUMMIT:SUM-85127F6B"
+  },
+  {
+    "county": "Summit",
+    "case_number": "SUM-010E7306",
+    "doc_number": "",
+    "owner_name": "Chris Rollic",
+    "plaintiff": "Kristen M. Scalise",
+    "defendant": "Chris Rollic",
+    "property_address": "3345 Oser Rd",
+    "property_city": "Barberton",
+    "property_state": "OH",
+    "property_zip": "44203",
+    "parcel_number": "46-04744",
+    "mailing_address": "",
+    "lead_type": "Foreclosure",
+    "filing_date": "11/09/2026",
+    "amount_owed": null,
+    "interest_rate": null,
+    "loan_type": "",
+    "lead_score": 77,
+    "source_url": "https://newcivilfilings.summitoh.net/",
+    "case_name": "KRISTEN M. SCALISE -VS- CHRIS ROLLIC",
+    "review_status": "Pending Review",
+    "added_date": "2026-11-09",
+    "flags": [
+      "Pending clerk review",
+      "Address from title report"
+    ],
+    "key": "SUMMIT:SUM-010E7306"
+  },
+  {
+    "county": "Summit",
+    "case_number": "SUM-84039259",
+    "doc_number": "",
+    "owner_name": "Diane M. Wirsching",
+    "plaintiff": "Kristen M. Scalise",
+    "defendant": "Diane M. Wirsching",
+    "property_address": "1090 Fleetwood Dr",
+    "property_city": "G Northfield",
+    "property_state": "OH",
+    "property_zip": "44067",
+    "parcel_number": "s",
+    "mailing_address": "",
+    "lead_type": "Foreclosure",
+    "filing_date": "11/09/2026",
+    "amount_owed": null,
+    "interest_rate": null,
+    "loan_type": "",
+    "lead_score": 77,
+    "source_url": "https://newcivilfilings.summitoh.net/",
+    "case_name": "KRISTEN M. SCALISE -VS- DIANE M. WIRSCHING",
+    "review_status": "Pending Review",
+    "added_date": "2026-11-09",
+    "flags": [
+      "Pending clerk review",
+      "Address from title report"
+    ],
+    "key": "SUMMIT:SUM-84039259"
+  },
+  {
+    "county": "Summit",
+    "case_number": "SUM-DF09FC8B",
+    "doc_number": "",
+    "owner_name": "Joshua Norris",
+    "plaintiff": "Kristen M. Scalise",
+    "defendant": "Joshua Norris",
+    "property_address": "1192 Juniper Avenue",
+    "property_city": "Akron",
+    "property_state": "OH",
+    "property_zip": "44310",
+    "parcel_number": "67-23148",
+    "mailing_address": "",
+    "lead_type": "Foreclosure",
+    "filing_date": "11/09/2026",
+    "amount_owed": null,
+    "interest_rate": null,
+    "loan_type": "",
+    "lead_score": 77,
+    "source_url": "https://newcivilfilings.summitoh.net/",
+    "case_name": "KRISTEN M. SCALISE -VS- JOSHUA NORRIS",
+    "review_status": "Pending Review",
+    "added_date": "2026-11-09",
+    "flags": [
+      "Pending clerk review",
+      "Address from title report"
+    ],
+    "key": "SUMMIT:SUM-DF09FC8B"
+  },
+  {
+    "county": "Summit",
+    "case_number": "SUM-92353823",
+    "doc_number": "",
+    "owner_name": "Min Nyi Nyi",
+    "plaintiff": "Kristen M. Scalise",
+    "defendant": "Min Nyi Nyi",
+    "property_address": "2838 Cory Ave",
+    "property_city": "",
+    "property_state": "OH",
+    "property_zip": "",
+    "parcel_number": "6720767",
+    "mailing_address": "",
+    "lead_type": "Foreclosure",
+    "filing_date": "11/09/2026",
+    "amount_owed": null,
+    "interest_rate": null,
+    "loan_type": "",
+    "lead_score": 77,
+    "source_url": "https://newcivilfilings.summitoh.net/",
+    "case_name": "KRISTEN M. SCALISE -VS- MIN NYI NYI",
+    "review_status": "Filing Complete",
+    "added_date": "2026-11-09",
+    "flags": [
+      "Address from title report"
+    ],
+    "key": "SUMMIT:SUM-92353823"
+  },
+  {
+    "county": "Summit",
+    "case_number": "SUM-73D82123",
+    "doc_number": "",
+    "owner_name": "Eagle Eye Pcs, Llc",
+    "plaintiff": "Kristen M Scalise",
+    "defendant": "Eagle Eye Pcs, Llc",
+    "property_address": "178 St. Clair Drive",
+    "property_city": "Akron",
+    "property_state": "OH",
+    "property_zip": "44307",
+    "parcel_number": "67-55282",
+    "mailing_address": "",
+    "lead_type": "Foreclosure",
+    "filing_date": "11/09/2026",
+    "amount_owed": null,
+    "interest_rate": null,
+    "loan_type": "",
+    "lead_score": 77,
+    "source_url": "https://newcivilfilings.summitoh.net/",
+    "case_name": "KRISTEN M SCALISE -VS- EAGLE EYE PCS, LLC",
+    "review_status": "Filing Complete",
+    "added_date": "2026-11-09",
+    "flags": [
+      "Address from title report"
+    ],
+    "key": "SUMMIT:SUM-73D82123"
+  },
+  {
+    "county": "Summit",
+    "case_number": "SUM-06CB6AC5",
+    "doc_number": "",
+    "owner_name": "Txs Property Services, Llc",
+    "plaintiff": "Kristen M. Scalise",
+    "defendant": "Txs Property Services, Llc",
+    "property_address": "1230 Wilbur Ave",
+    "property_city": "Akron",
+    "property_state": "OH",
+    "property_zip": "44301",
+    "parcel_number": "s",
+    "mailing_address": "",
+    "lead_type": "Foreclosure",
+    "filing_date": "11/09/2026",
+    "amount_owed": null,
+    "interest_rate": null,
+    "loan_type": "",
+    "lead_score": 77,
+    "source_url": "https://newcivilfilings.summitoh.net/",
+    "case_name": "KRISTEN M. SCALISE -VS- TXS PROPERTY SERVICES, LLC",
+    "review_status": "Filing Complete",
+    "added_date": "2026-11-09",
+    "flags": [
+      "Address from title report"
+    ],
+    "key": "SUMMIT:SUM-06CB6AC5"
+  },
+  {
+    "county": "Summit",
+    "case_number": "SUM-DCF205CC",
+    "doc_number": "",
+    "owner_name": "Carbon Holdings, Llc 56732025-Tracts 1 & 2 Only",
+    "plaintiff": "Kristen M Scalise",
+    "defendant": "Carbon Holdings, Llc",
+    "property_address": "367 Crosby Street",
+    "property_city": "Akron",
+    "property_state": "OH",
+    "property_zip": "44303",
+    "parcel_number": "68-11398",
+    "mailing_address": "",
+    "lead_type": "Foreclosure",
+    "filing_date": "11/09/2026",
+    "amount_owed": null,
+    "interest_rate": null,
+    "loan_type": "",
+    "lead_score": 77,
+    "source_url": "https://newcivilfilings.summitoh.net/",
+    "case_name": "KRISTEN M SCALISE -VS- CARBON HOLDINGS, LLC",
+    "review_status": "Filing Complete",
+    "added_date": "2026-11-09",
+    "flags": [
+      "Address from title report"
+    ],
+    "key": "SUMMIT:SUM-DCF205CC"
   },
   {
     "county": "Summit",
@@ -1209,10 +1435,9 @@
     "lead_score": 65,
     "source_url": "https://newcivilfilings.summitoh.net/",
     "case_name": "KRISTEN M SCALISE -VS- UNKNOWN SUCCESSOR TO EVERGREEN HOMES LLC",
-    "review_status": "Pending Review",
+    "review_status": "Filing Complete",
     "added_date": "2026-11-07",
     "flags": [
-      "Pending clerk review",
       "No individual owner named"
     ],
     "key": "SUMMIT:SUM-1DC6548D"
