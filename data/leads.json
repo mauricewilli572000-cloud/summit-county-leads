@@ -85,6 +85,63 @@
   },
   {
     "county": "Summit",
+    "case_number": "SUM-342CF0E0",
+    "doc_number": "",
+    "owner_name": "Sarah E. Snyder",
+    "plaintiff": "Oc Federal Credit Union Fka Ohio Catholi",
+    "defendant": "Sarah E. Snyder",
+    "property_address": "841 Jason Ave",
+    "property_city": "Akron",
+    "property_state": "OH",
+    "property_zip": "44314",
+    "parcel_number": "6848862",
+    "mailing_address": "",
+    "lead_type": "Foreclosure",
+    "filing_date": "11/10/2026",
+    "amount_owed": 80128.78,
+    "interest_rate": 3.0,
+    "loan_type": "Conventional",
+    "lead_score": 87,
+    "source_url": "https://newcivilfilings.summitoh.net/",
+    "case_name": "OC FEDERAL CREDIT UNION FKA OHIO CATHOLI -VS- SARAH E. SNYDER",
+    "review_status": "Pending Review",
+    "added_date": "2026-11-10",
+    "flags": [
+      "Pending clerk review",
+      "Address from title report"
+    ],
+    "key": "SUMMIT:SUM-342CF0E0"
+  },
+  {
+    "county": "Summit",
+    "case_number": "SUM-9C09E871",
+    "doc_number": "",
+    "owner_name": "Christine Boggs",
+    "plaintiff": "Fifth Third Bank, National Association",
+    "defendant": "Christine Boggs",
+    "property_address": "1059 Maple St",
+    "property_city": "Tallmadge",
+    "property_state": "OH",
+    "property_zip": "44278",
+    "parcel_number": "6003149",
+    "mailing_address": "",
+    "lead_type": "Foreclosure",
+    "filing_date": "11/10/2026",
+    "amount_owed": 79225.75,
+    "interest_rate": 3.875,
+    "loan_type": "Conventional",
+    "lead_score": 87,
+    "source_url": "https://newcivilfilings.summitoh.net/",
+    "case_name": "FIFTH THIRD BANK, NATIONAL ASSOCIATION -VS- CHRISTINE BOGGS",
+    "review_status": "Filing Complete",
+    "added_date": "2026-11-10",
+    "flags": [
+      "Address from title report"
+    ],
+    "key": "SUMMIT:SUM-9C09E871"
+  },
+  {
+    "county": "Summit",
     "case_number": "SUM-808C6830",
     "doc_number": "",
     "owner_name": "Delores E Holland",
@@ -216,12 +273,10 @@
     "lead_score": 82,
     "source_url": "https://newcivilfilings.summitoh.net/",
     "case_name": "WILMINGTON TRUST, NATIONAL ASSOCIATION -VS- CASCADE LOFTS, LLC",
-    "review_status": "Pending Review",
+    "review_status": "Filing Complete",
     "added_date": "2026-11-10",
     "flags": [
-      "Pending clerk review",
-      "No individual owner named",
-      "Address from title report"
+      "No individual owner named"
     ],
     "key": "SUMMIT:SUM-C5AE9A1E"
   },
@@ -246,7 +301,7 @@
     "lead_score": 82,
     "source_url": "https://newcivilfilings.summitoh.net/",
     "case_name": "FREEDOM MORTGAGE CORPORATION -VS- WILBERT CHING",
-    "review_status": "Pending Review",
+    "review_status": "Filing Complete",
     "added_date": "2026-11-10",
     "flags": [
       "Pending clerk review",
@@ -473,7 +528,7 @@
     "lead_score": 77,
     "source_url": "https://newcivilfilings.summitoh.net/",
     "case_name": "KRISTEN M. SCALISE -VS- CHRIS ROLLIC",
-    "review_status": "Pending Review",
+    "review_status": "Filing Complete",
     "added_date": "2026-11-09",
     "flags": [
       "Pending clerk review"
@@ -501,7 +556,7 @@
     "lead_score": 77,
     "source_url": "https://newcivilfilings.summitoh.net/",
     "case_name": "KRISTEN M. SCALISE -VS- DIANE M. WIRSCHING",
-    "review_status": "Pending Review",
+    "review_status": "Filing Complete",
     "added_date": "2026-11-09",
     "flags": [
       "Pending clerk review"
@@ -529,7 +584,7 @@
     "lead_score": 77,
     "source_url": "https://newcivilfilings.summitoh.net/",
     "case_name": "KRISTEN M. SCALISE -VS- JOSHUA NORRIS",
-    "review_status": "Pending Review",
+    "review_status": "Filing Complete",
     "added_date": "2026-11-09",
     "flags": [
       "Pending clerk review"
@@ -669,7 +724,7 @@
     "lead_score": 77,
     "source_url": "https://newcivilfilings.summitoh.net/",
     "case_name": "LAKEVIEW LOAN SERVICING, LLC -VS- AMY C. PRATT",
-    "review_status": "Pending Review",
+    "review_status": "Filing Complete",
     "added_date": "2026-11-10",
     "flags": [
       "Pending clerk review",
@@ -1469,6 +1524,63 @@
       "Pending clerk review"
     ],
     "key": "SUMMIT:SUM-85127F6B"
+  },
+  {
+    "county": "Summit",
+    "case_number": "SUM-871C6C30",
+    "doc_number": "",
+    "owner_name": "Matthew C. Bain",
+    "plaintiff": "Eriebank A Division Of Cnb Bank",
+    "defendant": "Matthew C. Bain",
+    "property_address": "",
+    "property_city": "",
+    "property_state": "OH",
+    "property_zip": "",
+    "parcel_number": "",
+    "mailing_address": "",
+    "lead_type": "Foreclosure",
+    "filing_date": "11/10/2026",
+    "amount_owed": null,
+    "interest_rate": null,
+    "loan_type": "",
+    "lead_score": 65,
+    "source_url": "https://newcivilfilings.summitoh.net/",
+    "case_name": "ERIEBANK A DIVISION OF CNB BANK -VS- MATTHEW C. BAIN",
+    "review_status": "Pending Review",
+    "added_date": "2026-11-10",
+    "flags": [
+      "Pending clerk review"
+    ],
+    "key": "SUMMIT:SUM-871C6C30"
+  },
+  {
+    "county": "Summit",
+    "case_number": "SUM-F28F2564",
+    "doc_number": "",
+    "owner_name": "",
+    "plaintiff": "Loan Funder LLC",
+    "defendant": "Akron Massillon Rental Housing Llc",
+    "property_address": "",
+    "property_city": "",
+    "property_state": "OH",
+    "property_zip": "",
+    "parcel_number": "",
+    "mailing_address": "",
+    "lead_type": "Foreclosure",
+    "filing_date": "11/10/2026",
+    "amount_owed": null,
+    "interest_rate": null,
+    "loan_type": "",
+    "lead_score": 65,
+    "source_url": "https://newcivilfilings.summitoh.net/",
+    "case_name": "LOAN FUNDER LLC -VS- AKRON MASSILLON RENTAL HOUSING LLC",
+    "review_status": "Pending Review",
+    "added_date": "2026-11-10",
+    "flags": [
+      "Pending clerk review",
+      "No individual owner named"
+    ],
+    "key": "SUMMIT:SUM-F28F2564"
   },
   {
     "county": "Summit",
