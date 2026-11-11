@@ -1,10 +1,10 @@
 {
   "county": "Summit",
-  "generated_at": "2026-11-10T18:10:06.244335Z",
-  "total_leads": 62,
-  "leads_with_property_address": 54,
+  "generated_at": "2026-11-11T02:10:42.740035Z",
+  "total_leads": 64,
+  "leads_with_property_address": 56,
   "leads_with_mailing_address": 3,
-  "average_lead_score": 74.2,
+  "average_lead_score": 74.4,
   "leads": [
     {
       "county": "Summit",
@@ -111,8 +111,7 @@
       "review_status": "Pending Review",
       "added_date": "2026-11-10",
       "flags": [
-        "Pending clerk review",
-        "Address from title report"
+        "Pending clerk review"
       ]
     },
     {
@@ -302,6 +301,63 @@
       "added_date": "2026-11-10",
       "flags": [
         "Pending clerk review",
+        "Address from complaint"
+      ]
+    },
+    {
+      "county": "Summit",
+      "case_number": "SUM-1BE443BA",
+      "doc_number": "",
+      "owner_name": "Kerry Edwards",
+      "plaintiff": "Phh Asset Services LLC",
+      "defendant": "Kerry Edwards",
+      "property_address": "28080 Mountz Road",
+      "property_city": "East Rochester",
+      "property_state": "OH",
+      "property_zip": "44625",
+      "parcel_number": "67-13395",
+      "mailing_address": "",
+      "lead_type": "Foreclosure",
+      "filing_date": "11/10/2026",
+      "amount_owed": null,
+      "interest_rate": 6.75,
+      "loan_type": "Conventional",
+      "lead_score": 82,
+      "source_url": "https://newcivilfilings.summitoh.net/",
+      "case_name": "PHH ASSET SERVICES LLC -VS- KERRY EDWARDS",
+      "review_status": "Pending Review",
+      "added_date": "2026-11-11",
+      "flags": [
+        "Pending clerk review",
+        "Address from complaint"
+      ]
+    },
+    {
+      "county": "Summit",
+      "case_number": "SUM-E900CA3F",
+      "doc_number": "",
+      "owner_name": "",
+      "plaintiff": "Nwl Company, LLC",
+      "defendant": "Get You Some Properties Llc",
+      "property_address": "1053 Stroman Ave",
+      "property_city": "Akron",
+      "property_state": "OH",
+      "property_zip": "44306",
+      "parcel_number": "6728146",
+      "mailing_address": "",
+      "lead_type": "Foreclosure",
+      "filing_date": "11/10/2026",
+      "amount_owed": null,
+      "interest_rate": 8.375,
+      "loan_type": "Conventional",
+      "lead_score": 82,
+      "source_url": "https://newcivilfilings.summitoh.net/",
+      "case_name": "NWL COMPANY, LLC -VS- GET YOU SOME PROPERTIES LLC",
+      "review_status": "Pending Review",
+      "added_date": "2026-11-11",
+      "flags": [
+        "Pending clerk review",
+        "No individual owner named",
         "Address from complaint"
       ]
     },
