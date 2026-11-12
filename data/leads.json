@@ -332,8 +332,7 @@
     "review_status": "Pending Review",
     "added_date": "2026-11-11",
     "flags": [
-      "Pending clerk review",
-      "Address from complaint"
+      "Pending clerk review"
     ],
     "key": "SUMMIT:SUM-1BE443BA"
   },
@@ -362,10 +361,38 @@
     "added_date": "2026-11-11",
     "flags": [
       "Pending clerk review",
-      "No individual owner named",
-      "Address from complaint"
+      "No individual owner named"
     ],
     "key": "SUMMIT:SUM-E900CA3F"
+  },
+  {
+    "county": "Summit",
+    "case_number": "SUM-5072AE4E",
+    "doc_number": "",
+    "owner_name": "The Sakhamuru Group Ltd.",
+    "plaintiff": "U.S. Bank Trust National Association",
+    "defendant": "The Sakhamuru Group Ltd.",
+    "property_address": "384 Doyle Street",
+    "property_city": "Akron",
+    "property_state": "OH",
+    "property_zip": "44303",
+    "parcel_number": "67-44999",
+    "mailing_address": "",
+    "lead_type": "Foreclosure",
+    "filing_date": "11/11/2026",
+    "amount_owed": null,
+    "interest_rate": 8.0009,
+    "loan_type": "Conventional",
+    "lead_score": 82,
+    "source_url": "https://newcivilfilings.summitoh.net/",
+    "case_name": "U.S. BANK TRUST NATIONAL ASSOCIATION -VS- THE SAKHAMURU GROUP LTD.",
+    "review_status": "Pending Review",
+    "added_date": "2026-11-12",
+    "flags": [
+      "Pending clerk review",
+      "Address from title report"
+    ],
+    "key": "SUMMIT:SUM-5072AE4E"
   },
   {
     "county": "Summit",
