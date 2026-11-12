@@ -77,7 +77,16 @@ class SummitFeed:
                 pass
 
     def fetch(self) -> List[dict]:
-        self.page.goto(config.FEED_URL, wait_until="networkidle")
+        # The Clerk's page is sometimes slow from GitHub's servers (timed out twice on 2026-11-11/12):
+        # allow 90s per try and retry twice before giving up.
+        for attempt in range(3):
+            try:
+                self.page.goto(config.FEED_URL, wait_until="networkidle", timeout=90000)
+                break
+            except Exception:  # noqa: BLE001 - playwright TimeoutError
+                if attempt == 2:
+                    raise
+                self.page.wait_for_timeout(20000 * (attempt + 1))
         try:
             self.page.wait_for_function("document.body.innerText.toLowerCase().includes('-vs-')", timeout=30000)
         except Exception:
