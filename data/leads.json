@@ -329,7 +329,7 @@
     "lead_score": 82,
     "source_url": "https://newcivilfilings.summitoh.net/",
     "case_name": "PHH ASSET SERVICES LLC -VS- KERRY EDWARDS",
-    "review_status": "Pending Review",
+    "review_status": "Filing Complete",
     "added_date": "2026-11-11",
     "flags": [
       "Pending clerk review"
@@ -357,10 +357,9 @@
     "lead_score": 82,
     "source_url": "https://newcivilfilings.summitoh.net/",
     "case_name": "NWL COMPANY, LLC -VS- GET YOU SOME PROPERTIES LLC",
-    "review_status": "Pending Review",
+    "review_status": "Filing Complete",
     "added_date": "2026-11-11",
     "flags": [
-      "Pending clerk review",
       "No individual owner named"
     ],
     "key": "SUMMIT:SUM-E900CA3F"
@@ -386,13 +385,41 @@
     "lead_score": 82,
     "source_url": "https://newcivilfilings.summitoh.net/",
     "case_name": "U.S. BANK TRUST NATIONAL ASSOCIATION -VS- THE SAKHAMURU GROUP LTD.",
-    "review_status": "Pending Review",
+    "review_status": "Filing Complete",
     "added_date": "2026-11-12",
     "flags": [
       "Pending clerk review",
       "Address from title report"
     ],
     "key": "SUMMIT:SUM-5072AE4E"
+  },
+  {
+    "county": "Summit",
+    "case_number": "SUM-B63EBC8F",
+    "doc_number": "",
+    "owner_name": "Krishna Prakash Balabhadrapatruni",
+    "plaintiff": "Keybank National Association",
+    "defendant": "Krishna Prakash Balabhadrapatruni",
+    "property_address": "5091 Concord Dr",
+    "property_city": "Copley",
+    "property_state": "OH",
+    "property_zip": "44321",
+    "parcel_number": "1702504",
+    "mailing_address": "",
+    "lead_type": "Foreclosure",
+    "filing_date": "11/12/2026",
+    "amount_owed": 337913.37,
+    "interest_rate": 2.75,
+    "loan_type": "Conventional",
+    "lead_score": 82,
+    "source_url": "https://newcivilfilings.summitoh.net/",
+    "case_name": "KEYBANK NATIONAL ASSOCIATION -VS- KRISHNA PRAKASH BALABHADRAPATRUNI",
+    "review_status": "Filing Complete",
+    "added_date": "2026-11-12",
+    "flags": [
+      "Address from complaint"
+    ],
+    "key": "SUMMIT:SUM-B63EBC8F"
   },
   {
     "county": "Summit",
@@ -1631,7 +1658,7 @@
     "lead_score": 65,
     "source_url": "https://newcivilfilings.summitoh.net/",
     "case_name": "ERIEBANK A DIVISION OF CNB BANK -VS- MATTHEW C. BAIN",
-    "review_status": "Pending Review",
+    "review_status": "Filing Complete",
     "added_date": "2026-11-10",
     "flags": [
       "Pending clerk review"
@@ -1659,13 +1686,38 @@
     "lead_score": 65,
     "source_url": "https://newcivilfilings.summitoh.net/",
     "case_name": "LOAN FUNDER LLC -VS- AKRON MASSILLON RENTAL HOUSING LLC",
-    "review_status": "Pending Review",
+    "review_status": "Filing Complete",
     "added_date": "2026-11-10",
     "flags": [
-      "Pending clerk review",
       "No individual owner named"
     ],
     "key": "SUMMIT:SUM-F28F2564"
+  },
+  {
+    "county": "Summit",
+    "case_number": "SUM-091B5E8B",
+    "doc_number": "",
+    "owner_name": "Michael Long",
+    "plaintiff": "Aurora Shores Condominium Two Owners Assoc. Inc.",
+    "defendant": "Michael Long",
+    "property_address": "",
+    "property_city": "",
+    "property_state": "OH",
+    "property_zip": "",
+    "parcel_number": "",
+    "mailing_address": "",
+    "lead_type": "Foreclosure",
+    "filing_date": "11/12/2026",
+    "amount_owed": null,
+    "interest_rate": null,
+    "loan_type": "",
+    "lead_score": 65,
+    "source_url": "https://newcivilfilings.summitoh.net/",
+    "case_name": "AURORA SHORES CONDOMINIUM TWO OWNERS ASSOC. INC. -VS- MICHAEL LONG",
+    "review_status": "Filing Complete",
+    "added_date": "2026-11-12",
+    "flags": [],
+    "key": "SUMMIT:SUM-091B5E8B"
   },
   {
     "county": "Summit",
