@@ -1,6 +1,6 @@
 {
   "county": "Summit",
-  "generated_at": "2026-11-13T02:52:51.520983Z",
+  "generated_at": "2026-11-13T18:00:06.859497Z",
   "total_leads": 68,
   "leads_with_property_address": 59,
   "leads_with_mailing_address": 3,
@@ -325,7 +325,7 @@
       "lead_score": 82,
       "source_url": "https://newcivilfilings.summitoh.net/",
       "case_name": "NEWREZ LLC -VS- BRANDON YANKOVICH",
-      "review_status": "Pending Review",
+      "review_status": "Filing Complete",
       "added_date": "2026-11-13",
       "flags": [
         "Pending clerk review",
