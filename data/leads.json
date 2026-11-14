@@ -51,8 +51,7 @@
     "review_status": "Pending Review",
     "added_date": "2026-11-14",
     "flags": [
-      "Pending clerk review",
-      "Address from complaint"
+      "Pending clerk review"
     ],
     "key": "SUMMIT:SUM-0BB6C32D"
   },
@@ -80,8 +79,7 @@
     "review_status": "Pending Review",
     "added_date": "2026-11-14",
     "flags": [
-      "Pending clerk review",
-      "Address from title report"
+      "Pending clerk review"
     ],
     "key": "SUMMIT:SUM-129F639C"
   },
@@ -448,8 +446,7 @@
     "review_status": "Pending Review",
     "added_date": "2026-11-14",
     "flags": [
-      "Pending clerk review",
-      "Address from complaint"
+      "Pending clerk review"
     ],
     "key": "SUMMIT:SUM-3726E844"
   },

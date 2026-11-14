@@ -1,6 +1,6 @@
 {
   "county": "Summit",
-  "generated_at": "2026-11-14T02:39:28.151697Z",
+  "generated_at": "2026-11-14T16:42:14.345480Z",
   "total_leads": 71,
   "leads_with_property_address": 62,
   "leads_with_mailing_address": 3,
@@ -57,8 +57,7 @@
       "review_status": "Pending Review",
       "added_date": "2026-11-14",
       "flags": [
-        "Pending clerk review",
-        "Address from complaint"
+        "Pending clerk review"
       ]
     },
     {
@@ -85,8 +84,7 @@
       "review_status": "Pending Review",
       "added_date": "2026-11-14",
       "flags": [
-        "Pending clerk review",
-        "Address from title report"
+        "Pending clerk review"
       ]
     },
     {
@@ -440,8 +438,7 @@
       "review_status": "Pending Review",
       "added_date": "2026-11-14",
       "flags": [
-        "Pending clerk review",
-        "Address from complaint"
+        "Pending clerk review"
       ]
     },
     {
